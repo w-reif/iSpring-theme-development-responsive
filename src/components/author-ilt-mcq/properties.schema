@@ -1,0 +1,108 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "question": {
+        "type": "string",
+        "required": true,
+        "title": "Question",
+        "default": "",
+        "inputType": "TextArea",
+        "validators": [],
+        "help": "This is a multiple line text input that displays before the component.",
+        "translatable": true
+    },
+    "shuffle": {
+      "type": "string",
+      "required": true,
+      "title": "Shuffle Answers",
+      "default": "1",
+      "inputType": {
+        "type": "Radio",
+        "options": [
+          { "label": "Shuffle All Answers", "val": "1"},
+          { "label": "Shuffle Distractors Only", "val": "2"},
+          { "label": "Not Shuffled", "val": "0"}
+        ]
+      },
+      "help":"https://github.com/powmedia/backbone-forms"
+    },
+    "retries": {
+      "type": "number",
+      "required": true,
+      "default": 0,
+      "title": "Number of Retries",
+      "inputType": "Number",
+      "validators": [
+        "required",
+        "number"
+      ],
+      "help": "This is a number field"
+    },
+    "answers": {
+      "type": "array",
+      "required": true,
+      "title": "Answers",
+      "items": {
+        "type": "object",
+        "required": false,
+        "properties": {
+          "weighting": {
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Answer Weighting",
+            "inputType": "Number",
+            "validators": [
+              "required",
+              "number"
+            ],
+            "help": "This is a number field"
+          },
+          "correct": {
+            "type": "boolean",
+            "required": false,
+            "title": "Correct Answer?",
+            "default": true,
+            "inputType": "Checkbox",
+            "help": "Checkbox returning a boolean true/false"
+          },
+          "answerText": {
+            "type": "string",
+            "required": true,
+            "title": "Answer text",
+            "default": "",
+            "inputType": "TextArea",
+            "validators": [],
+            "help": "This is a multiple line text input stored as a string",
+            "translatable": true
+          },
+          "feedbackText": {
+            "type": "string",
+            "required": true,
+            "title": "Feedback text",
+            "default": "",
+            "inputType": "TextArea",
+            "validators": [],
+            "help": "Response shown when this option is selected.",
+            "translatable": true
+          }
+        },
+        "help": "This groups multiple fields into an object"
+      },
+      "help": "List of a single data type"
+    }
+  }
+}

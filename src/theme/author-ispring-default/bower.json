@@ -1,0 +1,40 @@
+{
+  "name": "author-ispring-default",
+  "version": "0.1.3",
+  "framework": ">=5",
+  "homepage": "https://github.com/workbit-io/author-ispring-default",
+  "issues": "https://github.com/workbit-io/author_framework/issues/new",
+  "theme": "ispringDefault",
+  "displayName": "ISPRING Default",
+  "fastPreview": {
+    "_isEnabled": true,
+    "supportedPlugins": {
+      "whitelistCorePlugins": true,
+      "supportedMenu": "adapt-contrib-boxMenu",
+      "componentsSupported": [
+        "author-ilt-fill-blank",
+        "author-ilt-match-text",
+        "author-ilt-text",
+        "author-ilt-list",
+        "author-ilt-embed",
+        "author-ilt-s1000d",
+        "author-ilt-mcq",
+        "author-ilt-image",
+        "author-ilt-drag-image",
+        "author-ilt-animate",
+        "author-ilt-av"
+      ],
+      "extensionsSupported": [
+        "author-contentGroups",
+        "author-ispring-training"
+      ],
+      "excludeExtensions": ["adapt-contrib-spoor"]
+    }
+  },
+  "description": "A default theme for ILT ISPRING Courseware",
+  "main": "js/theme.js",
+  "keywords": ["adapt-plugin", "adapt-theme"],
+  "license": "GPL-3.0",
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+  "targetAttribute": "_ispringDefault"
+}

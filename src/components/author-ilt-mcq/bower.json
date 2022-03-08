@@ -1,0 +1,16 @@
+{
+  "name": "author-ilt-mcq",
+  "version": "0.0.4",
+  "framework": ">=1.5",
+  "homepage": "https://github.com/workbit-io/author-ilt-mcq",
+  "issues": "https://github.com/workbit-io/author-ilt-mcq/issues/new",
+  "component" : "ilt-mcq",
+  "displayName" : "Single Choice Question",
+  "description": "Assessment component with ony one correct answer.",
+  "main": "/js/author-ilt-mcq.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

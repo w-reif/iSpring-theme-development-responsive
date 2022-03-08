@@ -1,0 +1,16 @@
+{
+  "name": "author-ilt-list",
+  "version": "0.0.3",
+  "framework": ">=1.5",
+  "homepage": "https://github.com/workbit-io/author-ilt-list",
+  "issues": "https://github.com/workbit-io/author-ilt-list/issues/new",
+  "component" : "ilt-list",
+  "displayName" : "List Component",
+  "description": "List with pre and post text areas",
+  "main": "/js/author-ilt-list.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

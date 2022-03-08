@@ -1,0 +1,266 @@
+[
+  {
+    "title": "Image and list",
+    "displayTitle": "Image and list",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 1,
+    "klps": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "6683696f-63ab-4f4e-b295-6056f3548620",
+    "_parentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_type": "block",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowId": "6683696f-63ab-4f4e-b295-6056f3548620",
+      "__shallowParentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e"
+    },
+    "_iltIspringTraining": {
+      "_thumbnail": "ea37f6675d64f18208b744182bee3439f4b292a6\\6213c56154923622182548cd.png"
+    }
+  },
+  {
+    "title": "image",
+    "displayTitle": "image",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 2,
+    "klps": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "ab29456d-ab5f-44b7-9ee7-45035cbbff37",
+    "_parentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_type": "block",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": false,
+      "word": false
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowId": "ab29456d-ab5f-44b7-9ee7-45035cbbff37",
+      "__shallowParentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e"
+    },
+    "_iltIspringTraining": {
+      "_thumbnail": "ea37f6675d64f18208b744182bee3439f4b292a6\\6213cc6954923622182548d1.png"
+    }
+  },
+  {
+    "title": "list",
+    "displayTitle": "list",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 3,
+    "klps": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "ed3821cd-22a8-4d71-b5cf-2d06b8dd0317",
+    "_parentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_type": "block",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowId": "ed3821cd-22a8-4d71-b5cf-2d06b8dd0317",
+      "__shallowParentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e"
+    },
+    "_iltIspringTraining": {
+      "_thumbnail": "ea37f6675d64f18208b744182bee3439f4b292a6\\6213ccbc54923622182548d4.png"
+    }
+  },
+  {
+    "title": "SCQ",
+    "displayTitle": "SCQ",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 4,
+    "klps": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "67f86881-8207-4713-9a6c-b1aacf9594eb",
+    "_parentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_type": "block",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowId": "67f86881-8207-4713-9a6c-b1aacf9594eb",
+      "__shallowParentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e"
+    },
+    "_iltIspringTraining": {
+      "_thumbnail": "ea37f6675d64f18208b744182bee3439f4b292a6\\6213d33a54923622182548d6.png"
+    }
+  },
+  {
+    "title": "Drag image",
+    "displayTitle": "Drag image",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 5,
+    "klps": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "b0256cdc-eb31-4398-a0c1-5961cea3adf5",
+    "_parentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_type": "block",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowId": "b0256cdc-eb31-4398-a0c1-5961cea3adf5",
+      "__shallowParentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e"
+    },
+    "_iltIspringTraining": {
+      "_thumbnail": "ea37f6675d64f18208b744182bee3439f4b292a6\\6213d41054923622182548d8.png"
+    }
+  },
+  {
+    "title": "s1000d caution",
+    "displayTitle": "s1000d caution",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 6,
+    "klps": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "27f73a50-c1c2-43bc-92ff-925bd3a68086",
+    "_parentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_type": "block",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowId": "27f73a50-c1c2-43bc-92ff-925bd3a68086",
+      "__shallowParentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e"
+    },
+    "_iltIspringTraining": {
+      "_thumbnail": "ea37f6675d64f18208b744182bee3439f4b292a6\\6213d4ae54923622182548de.png"
+    }
+  },
+  {
+    "title": "s1000d warning",
+    "displayTitle": "s1000d warning",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 7,
+    "klps": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "9aaaa545-81e6-480e-bd48-5b3dfe8f9231",
+    "_parentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_type": "block",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowId": "9aaaa545-81e6-480e-bd48-5b3dfe8f9231",
+      "__shallowParentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e"
+    },
+    "_iltIspringTraining": {
+      "_thumbnail": "ea37f6675d64f18208b744182bee3439f4b292a6\\6213d51c54923622182548e0.png"
+    }
+  },
+  {
+    "title": "s1000d note",
+    "displayTitle": "s1000d note",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 8,
+    "klps": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "a15e8de3-ef6b-4fdb-8148-c3fcc4d7fbc2",
+    "_parentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_type": "block",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowId": "a15e8de3-ef6b-4fdb-8148-c3fcc4d7fbc2",
+      "__shallowParentId": "2b7b8642-f742-4ce9-9216-6d352c9f838e"
+    },
+    "_iltIspringTraining": {
+      "_thumbnail": "ea37f6675d64f18208b744182bee3439f4b292a6\\6213d53754923622182548e2.png"
+    }
+  }
+]

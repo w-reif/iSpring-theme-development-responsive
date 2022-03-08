@@ -1,0 +1,16 @@
+{
+  "name": "author-ilt-image",
+  "version": "0.0.4",
+  "framework": ">=1.5",
+  "homepage": "https://github.com/workbit-io/author-ilt-image",
+  "issues": "https://github.com/workbit-io/author-ilt-image/issues/new",
+  "component" : "ilt-image",
+  "displayName" : "ILT Image",
+  "description": "Image component",
+  "main": "/js/author-ilt-image.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

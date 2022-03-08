@@ -1,0 +1,244 @@
+{
+    "_globals": {
+        "_components": {
+            "_ilt-drag-image": {
+                "ariaRegion": ""
+            },
+            "_ilt-image": {
+                "ariaRegion": ""
+            },
+            "_ilt-list": {
+                "ariaRegion": ""
+            },
+            "_ilt-mcq": {
+                "ariaRegion": ""
+            },
+            "_ilt-s1000d": {
+                "ariaRegion": ""
+            },
+            "_ilt-animate": {
+                "ariaRegion": ""
+            },
+            "_ilt-av": {
+                "ariaRegion": ""
+            },
+            "_ilt-embed": {
+                "ariaRegion": ""
+            },
+            "_ilt-text": {
+                "ariaRegion": ""
+            }
+        },
+        "_menu": {
+            "_boxMenu": {
+                "durationLabel": "Duration:"
+            }
+        },
+        "_accessibility": {
+            "skipNavigationText": "Skip navigation",
+            "_ariaLabels": {
+                "answeredIncorrectly": "You answered incorrectly",
+                "answeredCorrectly": "You answered correctly",
+                "selectedAnswer": "selected",
+                "unselectedAnswer": "not selected",
+                "skipNavigation": "Skip Navigation",
+                "previous": "Back",
+                "navigationDrawer": "Open course resources.",
+                "close": "Close",
+                "closeDrawer": "Close Drawer",
+                "closeResources": "Close resources",
+                "drawer": "Top of side drawer",
+                "closePopup": "Close popup",
+                "next": "Next",
+                "done": "Done",
+                "complete": "Completed",
+                "incomplete": "Incomplete",
+                "incorrect": "Incorrect",
+                "correct": "Correct",
+                "locked": "Locked",
+                "visited": "Visited"
+            }
+        },
+        "_extensions": {
+            "_trickle": {
+                "incompleteContent": "There is incomplete content above. You must complete this before you can proceed through the course."
+            },
+            "_pageLevelProgress": {
+                "pageLevelProgress": "Page sections",
+                "pageLevelProgressIndicatorBar": "Page progress. Use this to listen to the list of regions in this topic and whether they're completed. You can jump directly to any that are incomplete or which sound particularly interesting. {{percentageComplete}}%",
+                "pageLevelProgressMenuBar": "Page completion {{percentageComplete}}%",
+                "pageLevelProgressEnd": "You have reached the end of the list of page sections.",
+                "optionalContent": "Optional content"
+            },
+            "_resources": {
+                "resources": "Additional resources."
+            },
+            "_languagePicker": {
+                "navigationBarLabel": "Select course language",
+                "languageSelector": "Language selector"
+            }
+        }
+    },
+    "title": "Course title",
+    "displayTitle": "Course title",
+    "body": "",
+    "curriculumTitle": "",
+    "coursewareNumber": "",
+    "coursewareDate": "2022-02-21T08:00:00.000Z",
+    "chapterReferences": "",
+    "subtitle": "",
+    "description": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "_latestTrackingId": 8,
+    "_buttons": {
+        "_submit": {
+            "buttonText": "Submit",
+            "ariaLabel": "Submit"
+        },
+        "_reset": {
+            "buttonText": "Reset",
+            "ariaLabel": "Reset"
+        },
+        "_showCorrectAnswer": {
+            "buttonText": "Correct answer",
+            "ariaLabel": "Show correct answer"
+        },
+        "_hideCorrectAnswer": {
+            "buttonText": "My answer",
+            "ariaLabel": "Hide correct answer"
+        },
+        "_showFeedback": {
+            "buttonText": "Show feedback",
+            "ariaLabel": "Show feedback"
+        },
+        "remainingAttemptsText": "attempts remaining",
+        "remainingAttemptText": "final attempt",
+        "disabledAriaLabel": "This button is disabled at the moment"
+    },
+    "_classes": "",
+    "_lockType": "",
+    "_id": "course",
+    "themeVariables": {
+        "_global": {
+            "font-color": "#4D4D4D",
+            "font-color-inverted": "#FFFFFF",
+            "link": "",
+            "link-inverted": "",
+            "link-hover": "",
+            "link-inverted-hover": "",
+            "heading-color": "#36CDE8",
+            "heading-color-inverted": "#FFFFFF"
+        },
+        "_items": {
+            "item-color": "#36CDE8",
+            "item-color-inverted": "#FFFFFF",
+            "item-color-hover": "",
+            "item-color-inverted-hover": "",
+            "item-color-selected": "",
+            "item-color-inverted-selected": "",
+            "visited": "#727272",
+            "visited-inverted": "#FFFFFF"
+        },
+        "_buttons": {
+            "btn-color": "#4D4D4D",
+            "btn-color-inverted": "#FFFFFF",
+            "btn-color-hover": "",
+            "btn-color-inverted-hover": "",
+            "disabled": "#DDDDDD",
+            "disabled-inverted": "#000000"
+        },
+        "_validation": {
+            "validation-success": "#065f28",
+            "validation-success-inverted": "#FFFFFF",
+            "validation-error": "#ff0000",
+            "validation-error-inverted": "#FFFFFF"
+        },
+        "_progress": {
+            "progress": "#9096A0",
+            "progress-inverted": "#FFFFFF",
+            "progress-border": "#9096A0"
+        },
+        "_nav": {
+            "nav": "#FFFFFF",
+            "nav-inverted": "#9096A0",
+            "nav-icon": "",
+            "nav-icon-inverted": "",
+            "nav-icon-hover": "",
+            "nav-icon-inverted-hover": "",
+            "nav-progress": "",
+            "nav-progress-inverted": "",
+            "nav-progress-border": "",
+            "nav-progress-hover": "",
+            "nav-progress-inverted-hover": "",
+            "nav-progress-border-hover": ""
+        },
+        "_notify": {
+            "notify": "#36CDE8",
+            "notify-inverted": "#FFFFFF",
+            "notify-link": "",
+            "notify-link-hover": "",
+            "notify-btn": "",
+            "notify-btn-inverted": "",
+            "notify-btn-hover": "",
+            "notify-btn-inverted-hover": "",
+            "notify-icon": "",
+            "notify-icon-inverted": "",
+            "notify-icon-hover": "",
+            "notify-icon-inverted-hover": ""
+        },
+        "_drawer": {
+            "drawer": "#263944",
+            "drawer-inverted": "#FFFFFF",
+            "drawer-link": "",
+            "drawer-link-hover": "",
+            "drawer-icon": "",
+            "drawer-icon-inverted": "",
+            "drawer-icon-hover": "",
+            "drawer-icon-inverted-hover": "",
+            "drawer-item": "",
+            "drawer-item-inverted": "",
+            "drawer-item-hover": "",
+            "drawer-item-inverted-hover": "",
+            "drawer-item-selected": "",
+            "drawer-item-inverted-selected": "",
+            "drawer-progress": "",
+            "drawer-progress-inverted": "",
+            "drawer-progress-border": "",
+            "drawer-progress-hover": "",
+            "drawer-progress-inverted-hover": "",
+            "drawer-progress-border-hover": ""
+        },
+        "_presentation": {
+            "instructorHeaderBackgroundColor": "#e6212a",
+            "instructorBlockIndicatorTextColor": "#000000",
+            "instructorSidebarBackgroundColor": "#fafafa",
+            "instructorSidebarItemBackgroundColor": "rgb(255 255 255)",
+            "instructorSidebarItemActiveBackgroundColor": "rgb(69 115 217)",
+            "instructorSidebarItemTextColor": "#000000",
+            "instructorSidebarItemActiveTextColor": "#FFF",
+            "instructorLogo": "assets/default_0.png",
+            "studentPageLogo": "assets/default_1.png",
+            "studentPagesidebarBackgroundColor": "rgb(152 152 152)"
+        },
+        "_misc": {
+            "background": "#000000",
+            "background-inverted": "#FFFFFF",
+            "shadow": "#000000",
+            "shadow-inverted": "#FFFFFF"
+        }
+    },
+    "output": null,
+    "_start": {
+        "_isEnabled": false,
+        "_startIds": [],
+        "_force": false,
+        "_isMenuDisabled": false
+    },
+    "__metadata": null,
+    "_type": "course",
+    "_lockedByUserId": null,
+    "_iltIspringTraining": {
+        "_langCode": "en"
+    }
+}

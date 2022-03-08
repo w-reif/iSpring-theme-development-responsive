@@ -1,0 +1,272 @@
+// CBT TOP
+@ilt-top-navigation-height: 59px;
+@ilt-bottom-navigation-height: 28px;
+
+@branding-image-primary: url("assets/default_0.png");
+@branding-image-primary-width: 265px;
+@branding-image-secondary: url("assets/default_1.png");
+@branding-image-secondary-width: 200px;
+
+@block-title-font-size: 25px;
+@block-title-font-weight: 600;
+@block-title-font-color: #4f5860;
+
+// CBT Content
+@frame-padding: 8px;
+@frame-border-bottom-width: 4px;
+
+@border-color: #f0f0f0;
+@ilt-view-height: calc(
+    ~"100vh - @{ilt-top-navigation-height} - @{ilt-bottom-navigation-height} - @{frame-padding} "
+  )
+  !important;
+@ilt-component-height: calc(
+    ~"100vh - @{ilt-top-navigation-height} - @{ilt-bottom-navigation-height} - @{frame-padding} - @{frame-padding} - @{frame-border-bottom-width} "
+  )
+  !important;
+
+// CBT MENU
+@ilt-view-padding: @frame-padding + @frame-padding;
+@ilt-margin-top: calc(
+  ~"@{ilt-top-navigation-height} + @{ilt-view-padding} - (@{ilt-top-navigation-height} + @{ilt-view-padding}) * 2"
+);
+@ilt-margin-left: calc(~"@{ilt-view-padding} - (@{ilt-view-padding}  * 2)");
+
+// Debug
+@ilt-debug-padding-top: calc(
+  ~"@{ilt-top-navigation-height} - (@{ilt-top-navigation-height}  * 2)"
+);
+
+// CBT Bottom
+@ilt-bottom-control-font-height: 16px;
+@ilt-bottom-background-color: #808080;
+@ilt-bottom-control-color: #fff;
+@ilt-exit-control-width: 45px;
+@ilt-exit-control-paddingLeft: 5px;
+@ilt-additionalInformation-color: #000000;
+@ilt-control-width: 7vw;
+@ilt-control-max-width: 96px;
+@ilt-control-bg-image: url(assets/nav_but.png);
+@ilt-disabled-control-color: #666666;
+@ilt-muted-control-color: #666666;
+
+//components
+@fontSize:1.2vw;
+@bgFade: rgba(255, 255, 255, 0.7);
+@discGreyFill: rgb(221, 221, 221);
+@questHeadingGrey: #4f5860;
+@borderThickness: 2px;
+@buttonSize: 3vw;
+@submitTextGrey: rgb(154, 154, 154);
+@submitborderGrey: rgb(204, 204, 204);
+@submitborderGreyHover: rgb(141, 146, 143);
+@submitHoverBack: rgb(199, 203, 200);
+@disableOpacity: 0.3;
+@dropShadowBlack: rgba(0,0,0,0.6);
+.boxShadow(@x, @y, @blur, @spread, @color) {
+    -webkit-box-shadow: @x @y @blur @spread @color;
+       -moz-box-shadow: @x @y @blur @spread @color;
+            box-shadow: @x @y @blur @spread @color;
+}
+
+// mcq component
+@answerSelected: rgb(255, 214, 0);
+@answerCorrect: rgb(174, 217, 127);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ilt-drag-image-heading {
+  h2 {
+    color: @questHeadingGrey;
+    font-size: 1.7vw;
+  }
+  p {
+    padding-left: 1vw;
+  }
+}
+
+.ilt-drag-image-ctrlBar{
+  padding: 0 5vw;
+  display: flex;
+  margin-top: 0.6vw;
+}
+
+.ilt-drag-image-instrBar {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  min-height: @buttonSize;
+
+  padding: 0.5vw calc(@buttonSize / 3);
+  border: @borderThickness solid @discGreyFill;
+  border-radius: calc(@buttonSize / 2);
+  background-color: @bgFade;
+
+  .ilt-mcq-instrBar-text {
+    display: block;
+  }
+}
+
+.ilt-drag-image-submitBtn{
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+
+  height: @buttonSize;
+  margin-left: 1vw;
+
+  padding: 0vw calc(@buttonSize / 2);
+  border: @borderThickness solid @submitborderGrey;
+  border-radius: calc(@buttonSize / 2);
+  background-color: white;
+  color: @submitTextGrey;
+  &:disabled {
+    opacity: @disableOpacity;
+    cursor: default;
+  }
+  &:hover:enabled {
+    background-color: @submitHoverBack;
+    border-color: @submitborderGreyHover;
+  }
+}
+
+.ilt-drag-image-image {
+  height: 25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ilt-drag-image-container{
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+    padding: 0 2vw;
+    touch-action: none;
+    
+
+    .ilt-drag-image-choiceContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 7vw;
+    
+        .ilt-drag-image-image{
+            flex-grow: 1;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: scale-down;
+            }
+            
+            .ilt-drag-image-target{
+                font-size: 3vw;
+                height: 3.3vw;
+                line-height: @fontSize;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                box-sizing:content-box;
+
+                background-color: white;
+                border: @borderThickness solid transparent;
+                border-radius: calc(@buttonSize / 4);
+                text-align:center;
+                z-index: 1;
+                top:-100%;
+                padding:0.1vw 0.5vw;
+                .boxShadow(0px, 1px, 4px, 1px, @dropShadowBlack);
+                ._drag-image-dots {
+                    font-size: xxx-large;;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        .ilt-drag-image-options{
+            position:relative;
+            width: 10vw;
+            padding:0px;
+            border-radius: 0px 0px 0px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    }
+    
+    .ilt-drag-image-option{
+        height: 3.3vw;
+        line-height: @fontSize;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing:content-box;
+
+        padding:0.1vw 0.5vw;
+        border-radius: calc(@buttonSize / 4);
+        border: @borderThickness solid @discGreyFill;
+        background-color: white;
+        z-index: 10;
+        .boxShadow(1px, 1px, 3px, 0px, @discGreyFill);
+
+        &.active, &.mouse-enter-answer{
+            background-color: @submitHoverBack;
+            border-color: @submitborderGreyHover;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+.ilt-drag-image-image img {
+  pointer-events: none;
+}
+.ilt-drag-image-option img {
+  object-fit: scale-down;
+  max-height:100%;
+  pointer-events: none;
+}

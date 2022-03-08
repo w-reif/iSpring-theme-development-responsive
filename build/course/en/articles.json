@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Article title",
+    "displayTitle": "Article title",
+    "body": "",
+    "_classes": "",
+    "_shouldIncludeInAggregation": false,
+    "tos": [],
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_id": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+    "_parentId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+    "_type": "article",
+    "_lockedByUserId": null,
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__shallowId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__shallowParentId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892"
+    }
+  }
+]

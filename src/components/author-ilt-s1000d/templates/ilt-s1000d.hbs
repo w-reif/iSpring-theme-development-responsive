@@ -1,0 +1,10 @@
+<div>
+    <div class="ilt-s1000d-pre">{{{ preTextArea }}}</div>
+    <div class="ilt-s1000d-{{ displayType }}">
+        <div class="ilt-s1000d-body">{{{ textAreaField }}}</div>
+    </div>
+    {{#if audio}}
+    <audio controls src="{{ audio }}">Your browser does not support the audio element.</audio>
+    {{/if}}
+    <div class="ilt-s1000d-post">{{{ postTextArea }}}</div>
+</div>

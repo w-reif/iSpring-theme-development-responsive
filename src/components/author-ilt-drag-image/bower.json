@@ -1,0 +1,16 @@
+{
+  "name": "author-ilt-drag-image",
+  "version": "0.0.3",
+  "framework": ">=1.5",
+  "homepage": "https://github.com/workbit-io/author-ilt-drag-image",
+  "issues": "https://github.com/workbit-io/author-ilt-drag-image/issues/new",
+  "component" : "ilt-drag-image",
+  "displayName" : "Drag and Drop Image",
+  "description": "Drag and drop labels onto an image.",
+  "main": "/js/ilt-drag-image.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

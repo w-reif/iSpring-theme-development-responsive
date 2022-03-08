@@ -1,0 +1,13 @@
+{
+    "_id": "c-05",
+    "_parentId": "b-05",
+    "_type": "component",
+    "_component": "",
+    "_classes": "",
+    "_layout": "left",
+    "title": "component title",
+    "displayTitle": "component display title",
+    "body": "",
+
+    "assetFile": "course/assets/image.jpg"
+}

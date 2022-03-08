@@ -1,0 +1,26 @@
+<div class="ilt-drag-image-container">
+    <p><b>IGNORING:</b>MEDIA_ALT_TEXT</p>
+    <p><b>IGNORING:</b>DRAG ITEM: IMAGE_ALTTEXT</p>
+    <p><b>IGNORING:</b>shuffle,numTries,showDragBorder,showDragZone,showTargets</p>
+    <p><b>IGNORING:</b>targetAreas: pcWidth,pcHeight, X and Y will probably require manual repositioning</p>
+    <p><b>IGNORING:</b>dragItems: pcLeft,pcTop,pcWidth,pcHeight</p>
+    <p><b>IGNORING:</b>itemTargetMatching: weightingPc,feedbackText</p>
+    <div class ="ilt-drag-image-heading">
+        <h2>{{ langData.questionHead }}</h2>
+        <p>{{{ question }}}</p>
+    </div>
+    <div class="ilt-drag-image-choiceContainer">
+        <div class="ilt-drag-image-options"></div>
+        <div class="ilt-drag-image-image">
+            <img src="{{ imageField }}"/>
+        </div>
+    </div>
+    <div class="ilt-drag-image-ctrlBar">
+        <div class="ilt-drag-image-instrBar">
+            <div class="ilt-drag-image-instrBar-text">
+                {{{ langData.instruction }}}
+            </div>
+        </div>
+        <button disabled="true" class="ilt-drag-image-submitBtn">{{ langData.submit }}</button>
+    </div>
+</div>

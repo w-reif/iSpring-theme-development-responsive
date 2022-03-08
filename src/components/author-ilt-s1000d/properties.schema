@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "displayType": {
+      "type": "string",
+      "required": true,
+      "default": "caution",
+      "title": "Display Type",
+      "inputType": {
+        "type": "Radio",
+        "options": [
+          { "label": "Caution", "val": "caution"},
+          { "label": "Warning", "val": "warning"},
+          { "label": "Note", "val": "note"}
+        ]
+      },
+      "help":"https://github.com/powmedia/backbone-forms"
+    },
+    "preTextArea": {
+        "type": "string",
+        "required": true,
+        "title": "Preceeding Text Area",
+        "default": "",
+        "inputType": "TextArea",
+        "validators": [],
+        "help": "This is a multiple line text input that displays before the component.",
+        "translatable": true
+    },
+    "textAreaField": {
+        "type": "string",
+        "required": true,
+        "title": "Contents",
+        "default": "",
+        "inputType": "TextArea",
+        "validators": [],
+        "help": "This is a multiple line text input.",
+        "translatable": true
+    },
+    "postTextArea": {
+        "type": "string",
+        "required": true,
+        "title": "Proceeding Text Area",
+        "default": "",
+        "inputType": "TextArea",
+        "validators": [],
+        "help": "This is a multiple line text area displayed after the list.",
+        "translatable": true
+    },
+    "audio": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Audio",
+      "inputType": "Asset:audio",
+      "validators": [],
+      "help": "Select a audio asset"
+    }
+  }
+}

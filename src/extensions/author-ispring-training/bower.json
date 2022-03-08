@@ -1,0 +1,18 @@
+{
+  "name": "author-ispring-training",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/workbit-io/author-ispring-training.git"
+  },
+  "version": "0.3.2",
+  "framework": ">=5.0",
+  "homepage": "https://github.com/workbit-io/author-ispring-training",
+  "issues": "https://github.com/workbit-io/author_framework/issues/new",
+  "extension": "iltIspringTraining",
+  "displayName": "ISPRING Training",
+  "description": "An extension for ISPRING Training Courses",
+  "main": "/js/bootstrap.js",
+  "keywords": ["adapt-plugin", "adapt-extension"],
+  "license": "GPL-3.0",
+  "targetAttribute": "_iltIspringTraining"
+}

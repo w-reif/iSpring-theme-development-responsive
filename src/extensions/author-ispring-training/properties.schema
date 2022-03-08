@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_iltIspringTraining": {
+              "type": "object",
+              "required": false,
+              "legend": "Course Language",
+              "properties": {
+                "_langCode": {
+                  "type": "string",
+                  "required": true,
+                  "title": "Language",
+                  "help": "Target language for course",
+                  "validators": [],
+                  "default": "en",
+                  "inputType": {
+                    "type": "Select",
+                    "options": [
+                      "en",
+                      "no",
+                      "pl"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "block": {
+          "type": "object",
+          "properties": {
+            "_iltIspringTraining": {
+              "type": "object",
+              "required": false,
+              "legend": "ILT ISPRING Training",
+              "properties": {
+                "_thumbnail": {
+                  "type": "string",
+                  "inputType": "ISPRINGThumbnail",
+                  "default": null,
+                  "title": "Thumbnail",
+                  "help": "Thumbnail for this block",
+                  "validators": []
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

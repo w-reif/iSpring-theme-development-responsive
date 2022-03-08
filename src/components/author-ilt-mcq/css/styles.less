@@ -1,0 +1,260 @@
+// CBT TOP
+@ilt-top-navigation-height: 59px;
+@ilt-bottom-navigation-height: 28px;
+
+@branding-image-primary: url("assets/default_0.png");
+@branding-image-primary-width: 265px;
+@branding-image-secondary: url("assets/default_1.png");
+@branding-image-secondary-width: 200px;
+
+@block-title-font-size: 25px;
+@block-title-font-weight: 600;
+@block-title-font-color: #4f5860;
+
+// CBT Content
+@frame-padding: 8px;
+@frame-border-bottom-width: 4px;
+
+@border-color: #f0f0f0;
+@ilt-view-height: calc(
+    ~"100vh - @{ilt-top-navigation-height} - @{ilt-bottom-navigation-height} - @{frame-padding} "
+  )
+  !important;
+@ilt-component-height: calc(
+    ~"100vh - @{ilt-top-navigation-height} - @{ilt-bottom-navigation-height} - @{frame-padding} - @{frame-padding} - @{frame-border-bottom-width} "
+  )
+  !important;
+
+// CBT MENU
+@ilt-view-padding: @frame-padding + @frame-padding;
+@ilt-margin-top: calc(
+  ~"@{ilt-top-navigation-height} + @{ilt-view-padding} - (@{ilt-top-navigation-height} + @{ilt-view-padding}) * 2"
+);
+@ilt-margin-left: calc(~"@{ilt-view-padding} - (@{ilt-view-padding}  * 2)");
+
+// Debug
+@ilt-debug-padding-top: calc(
+  ~"@{ilt-top-navigation-height} - (@{ilt-top-navigation-height}  * 2)"
+);
+
+// CBT Bottom
+@ilt-bottom-control-font-height: 16px;
+@ilt-bottom-background-color: #808080;
+@ilt-bottom-control-color: #fff;
+@ilt-exit-control-width: 45px;
+@ilt-exit-control-paddingLeft: 5px;
+@ilt-additionalInformation-color: #000000;
+@ilt-control-width: 7vw;
+@ilt-control-max-width: 96px;
+@ilt-control-bg-image: url(assets/nav_but.png);
+@ilt-disabled-control-color: #666666;
+@ilt-muted-control-color: #666666;
+
+//components
+@fontSize:1.2vw;
+@bgFade: rgba(255, 255, 255, 0.7);
+@discGreyFill: rgb(221, 221, 221);
+@questHeadingGrey: #4f5860;
+@borderThickness: 2px;
+@buttonSize: 3vw;
+@submitTextGrey: rgb(154, 154, 154);
+@submitborderGrey: rgb(204, 204, 204);
+@submitborderGreyHover: rgb(141, 146, 143);
+@submitHoverBack: rgb(199, 203, 200);
+@disableOpacity: 0.3;
+@dropShadowBlack: rgba(0,0,0,0.6);
+.boxShadow(@x, @y, @blur, @spread, @color) {
+    -webkit-box-shadow: @x @y @blur @spread @color;
+       -moz-box-shadow: @x @y @blur @spread @color;
+            box-shadow: @x @y @blur @spread @color;
+}
+
+// mcq component
+@answerSelected: rgb(255, 214, 0);
+@answerCorrect: rgb(174, 217, 127);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ilt-mcq-heading {
+  h2 {
+    color: @questHeadingGrey;
+    font-size: 1.7vw;
+  }
+  p {
+    padding-left: 1vw;
+  }
+}
+.ilt-mcq-ctrlBar {
+  padding: 0 5vw;
+  display: flex;
+  margin-top: 0.6vw;
+}
+.ilt-mcq-instrBar {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  min-height: @buttonSize;
+
+  padding: 0.5vw calc(@buttonSize / 3);
+  border: @borderThickness solid @discGreyFill;
+  border-radius: calc(@buttonSize / 2);
+  background-color: @bgFade;
+
+  .ilt-mcq-instrBar-text {
+    display: block;
+  }
+}
+.ilt-mcq-submitBtn{
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+
+  height: @buttonSize;
+  margin-left: 1vw;
+
+  padding: 0vw calc(@buttonSize / 2);
+  border: @borderThickness solid @submitborderGrey;
+  border-radius: calc(@buttonSize / 2);
+  background-color: white;
+  color: @submitTextGrey;
+  &:disabled {
+    opacity: @disableOpacity;
+    cursor: default;
+  }
+  &:hover:enabled {
+    background-color: @submitHoverBack;
+    border-color: @submitborderGreyHover;
+  }
+}
+
+
+.ilt-mcq-answerImage {
+  height: 25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ilt-mcq-container {
+  padding: 0 2vw;
+
+  .ilt-mcq-choiceContainer {
+    padding: 0 5vw;
+    display: flex;
+
+    .ilt-mcq-answerButtons {
+      flex-grow: 1;
+      margin-top: 2vh;
+
+      .ilt-mcq-answer {
+        display: flex;
+
+        border: @borderThickness solid @discGreyFill;
+        border-radius: calc(@buttonSize / 2);
+        background-color: @bgFade;
+        margin-bottom: 0.3vw;
+        user-select: none;
+        cursor: default;
+
+        .ilt-mcq-answerIndex {
+          display: flex;
+          flex-grow: 0;
+          width: @buttonSize;
+          height: @buttonSize;
+          box-shadow: 0 0 0 @borderThickness @discGreyFill;
+          justify-content: center;
+          align-items: center;
+
+          font-size: calc(@buttonSize / 1.3);
+          border: @borderThickness solid white;
+          border-radius: calc(@buttonSize / 2);
+          background-color: white;
+          color: @discGreyFill;
+        }
+        &.ilt-mcq-Active {
+          cursor: pointer;
+        }
+        &.ilt-mcq-Active:hover .ilt-mcq-answerIndex {
+          background-color: @discGreyFill;
+          color: white;
+        }
+        .ilt-mcq-answer-text {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+
+          padding-left: calc(@buttonSize / 3);
+        }
+        &:last-of-type {
+          margin-bottom: 0.6vw;
+        }
+
+        &.ilt-mcq-Selected .ilt-mcq-answerIndex,
+        &.ilt-mcq-Selected:hover .ilt-mcq-answerIndex {
+          background-color: @answerSelected;
+          color: white;
+        }
+      }
+      &.ilt-mcq-Complete {
+        .ilt-mcq-answer {
+          opacity: @disableOpacity;
+        }
+        .ilt-mcq-answer.ilt-mcq-answerCorrect {
+          opacity: 1;
+          border-color: @answerCorrect;
+          .ilt-mcq-answerIndex {
+            box-shadow: 0 0 0 @borderThickness @answerCorrect;
+          }
+        }
+      }
+    }
+    .ilt-mcq-answerImage {
+      flex-grow: 0;
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding-left: 2vw;
+      }
+    }
+  }
+}
+
+
+.ilt-mcq-answer-text p{
+  margin:0;
+  padding:0;
+}

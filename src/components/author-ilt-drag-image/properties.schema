@@ -1,0 +1,250 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "question":{
+      "type": "string",
+      "required": true,
+      "title": "Question Text Area",
+      "default": "",
+      "inputType": "TextArea",
+      "validators": [],
+      "help": "This is a multiple line text area before the image.",
+      "translatable": true
+    },
+    "imageField": {
+      "type": "string",
+      "required": true,
+      "title": "Background Image",
+      "default": "",
+      "inputType": "Asset:image",
+      "validators": [],
+      "help": "Select an image that targets will be placed over.",
+      "translatable": true
+    },
+    "shuffle": {
+      "type": "string",
+      "required": true,
+      "title": "Shuffle Answers",
+      "default": "1",
+      "inputType": {
+        "type": "Radio",
+        "options": [
+          { "label": "Shuffle All Answers", "val": "1"},
+          { "label": "Shuffle Distractors Only", "val": "2"},
+          { "label": "Not Shuffled", "val": "0"}
+        ]
+      },
+      "help":"https://github.com/powmedia/backbone-forms"
+    },
+    "retries": {
+      "type": "number",
+      "required": true,
+      "default": 0,
+      "title": "Number of Retries",
+      "inputType": "Number",
+      "validators": [
+        "required",
+        "number"
+      ],
+      "help": "This is a number field"
+    },
+    "showDragBorder":{
+      "type": "boolean",
+      "required": false,
+      "title": "Show Item Border",
+      "default": true,
+      "inputType": "Checkbox",
+      "help": "Draw a border around draggable items."
+    },
+    "showDragZone":{
+      "type": "boolean",
+      "required": false,
+      "title": "Show Target Border",
+      "default": true,
+      "inputType": "Checkbox",
+      "help": "Draw a border around target areas."
+    },
+    "showTargets":{
+      "type": "boolean",
+      "required": false,
+      "title": "Show the Targets",
+      "default": true,
+      "inputType": "Checkbox",
+      "help": "Should the targets be visible?"
+    },
+    "targetAreas":{
+      "type": "array",
+      "required": true,
+      "title": "Target Areas",
+      "items": {
+        "type": "object",
+        "required": false,
+        "title": "Target Area",
+        "properties": {
+          "pcLeft":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Percentage Left",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the distance of the target from the left edge of the image."
+          },
+          "pcTop":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Percentage Top",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the distance of the target from the top edge of the image."
+          },
+          "pcWidth":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Percentage Width",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the width of the target relative to the images width."
+          },
+          "pcHeight":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Percentage Height",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the height of the target relative to the images height."
+          }
+        },
+        "help": "Target area properties."
+      },
+      "help": "List of target areas."
+    },
+    "dragItems":{
+      "type": "array",
+      "required": true,
+      "title": "Drag Items",
+      "items": {
+        "type": "object",
+        "required": false,
+        "title": "Target Area",
+        "properties": {
+          "imageField":{
+            "type": "string",
+            "required": false,
+            "title": "Image Field",
+            "default": "",
+            "inputType": "Asset:image",
+            "validators": [],
+            "help": "User selects an image type asset from the Asset Manager or an external URL",
+            "translatable": true
+          },
+          "pcLeft":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Percentage Left",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the distance of the target from the left edge of the image."
+          },
+          "pcTop":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Percentage Top",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the distance of the target from the top edge of the image."
+          },
+          "pcWidth":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Percentage Width",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the width of the drag item relative to the images width."
+          },
+          "pcHeight":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Percentage Height",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the height of the drag item relative to the images height."
+          }
+        },
+        "help": "Target area properties."
+      },
+      "help": "List of items to be dragged to targets."
+    },
+    "itemTargetMatching":{
+      "type": "array",
+      "required": true,
+      "title": "Matching of Targets to Items",
+      "items": {
+        "type": "object",
+        "required": false,
+        "title": "Object Field",
+        "properties": {
+          "targetAreaIndex":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Target Area Index",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "Index of the Target Area in the Target Areas list."
+          },
+          "dragItemIndex":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Drag Item Index",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "Index of the Drag Item in the Drag Items list."
+          },
+          "weightingPc":{
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Weighting Percentage",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "This is the percentage weighting to mark this component as complete."
+          },
+          "feedbackText":{
+            "type": "string",
+            "required": true,
+            "title": "Feedback Text",
+            "default": "",
+            "inputType": "TextArea",
+            "validators": [],
+            "help": "This is feedback text displayed when incorrectly matched.",
+            "translatable": true
+          }
+        },
+        "help": "A matching of Target indexes to Item indexes with feedback."
+      },
+      "help": "Match the index of list items to the index of target areas."
+    }
+  }
+}

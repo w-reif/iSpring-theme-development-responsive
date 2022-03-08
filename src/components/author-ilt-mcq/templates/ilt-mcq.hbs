@@ -1,0 +1,22 @@
+<div class="ilt-mcq-container">
+    <p><b>IGNORING:</b>IMAGE,IMAGE_ALIAS,MEDIA_ALT_TEXT,DISPLAY_LINK,LABEL</p>
+    <p><b>IGNORING:</b>ANSWERS: ANSWER_MEDIA,CORRECT,INCORRECT</p>
+    <p><b>IGNORING:</b>shuffle,retries</p>
+    <p><b>IGNORING:</b>answers: weighting,feedbackText</p>
+    <div class="ilt-mcq-heading">
+        <h2>{{ langData.questionHead }}</h2>
+        <p>{{{ question }}}</p>
+    </div>
+    <div class="ilt-mcq-choiceContainer">
+        <div class="ilt-mcq-answerButtons">
+            {{#each shuffAns}}<div class="ilt-mcq-answer ilt-mcq-Active">{{{this}}}</div>{{/each}}
+        </div>
+    </div>
+    <div class="ilt-mcq-ctrlBar">
+        <div class="ilt-mcq-instrBar">
+            <div class="ilt-mcq-instrBar-text">
+                {{{ langData.instruction }}}</div>
+            </div>
+        <button class="ilt-mcq-submitBtn">{{ langData.submit }}</button>
+    </div>
+</div>

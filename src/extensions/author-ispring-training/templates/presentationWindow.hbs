@@ -1,0 +1,33 @@
+<div class="presentationWindow {{#if thumbnailMode}}thumbnailMode{{/if}}">
+    <div class="presentationWindow__inner">
+        <img class="presentationWindow__inner__block-img" src="assets/block.png" />
+        <img class="presentationWindow__inner__block-brand" src="assets/brand.png" />
+        <div class="presentationWindow__inner__content">
+            <div {{#if thumbnailMode}} style="visibility: hidden;" {{/if}}
+                class="presentationWindow__inner__content__top">
+                <button id="fullScreenCtrl" class="presentationCtrl">Fullscreen</button>
+            </div>
+            <div id="presentationWindow__startBlock" class="presentationWindow__startBlock__inner"></div>
+            <div class="presentationWindow__inner__content__center"></div>
+            <div id="presentationWindow__endBlock" class="presentationWindow__endBlock__inner"></div>
+            <div class="presentationWindow__inner__content__bottom">
+                <button {{#if thumbnailMode}} style="visibility: hidden;" {{/if}} id="prevCtrlL"
+                    class="presentationCtrl">Previous</button>
+                <div class="presentationWindow__inner__content__bottom__end">
+                    <button id="prevCtrlR" class="presentationCtrl">Previous</button>
+                    <img src="assets/counter.png" class="slideIndexBg" alt="">
+                    <div id="slideIndex" class="slideIndex">{{currentBlockIndex}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{{#if thumbnailMode}}
+<button class="thumbnailMode__capture">Make thumbnail</button>
+<button class="thumbnailMode__cancelCapture">Cancel</button>
+<button class="thumbnailMode__saveCapture">Save</button>
+<div class="thumbnailMode__captured"></div>
+{{/if}}

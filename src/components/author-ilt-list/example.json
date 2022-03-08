@@ -1,0 +1,17 @@
+{
+    "_id": "c-05",
+    "_parentId": "b-05",
+    "_type": "component",
+    "_component": "",
+    "_classes": "",
+    "_layout": "left",
+    "title": "component title",
+    "displayTitle": "component display title",
+    "body": "",
+
+    "preTextArea":"<p>Before.</p>",
+    "postTextArea":"<p>After.</p>",
+    "listType":"Bullet",
+    "startNum":6,
+    "listItems":[{"textArea":"<p>Item 1.</p><p>Item 1 second para.</p>"},{"textArea":"<p><b>Item 2</b>.</p>"}]
+}

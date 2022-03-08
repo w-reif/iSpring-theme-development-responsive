@@ -1,0 +1,36 @@
+<header>
+    <div class="headerWrap">
+        <div class="headerLogo"></div>
+        <h1>Instructor Control Window</h1>
+    </div>
+</header>
+<main>
+    <section class="controlPnl">
+        <div id="launchCtrl" class="box-c">
+            <a id="launchPres" class="custom-underline" title="Launch Presentation">Launch Presentation</a>
+        </div>
+        <div id="previousCtrl" class="box-c split r">
+            <a id="prevSlide" class="custom-underline" title="Previous">Previous</a>
+        </div>
+        <div id="nextCtrl" class="box-c split">
+            <a id="nextSlide" class="custom-underline" title="Next">Next</a>
+        </div>
+        <div id="restartCtrl" class="box-c b">
+            <a id="resetSlides" class="custom-underline" title="Restart Presentation">Restart</a>
+        </div>
+        <div class="clearD"></div>
+        <div class="noteWrap">
+            <h1 id="slideTitle"></h1>
+            <div id="notesDiv" class="notesContent"></div>
+            <div id="addlNotesDiv" class="notesContent"></div>
+        </div>
+    </section>
+    <section class="thumbStrip">
+        <ul id="thumbList"></ul>
+    </section>
+</main>
+<section class="footStick">
+    <div class="stickCenter">
+        <label>Import additional slide notes.</label><input type="file" id="inputFile" />
+    </div>
+</section>

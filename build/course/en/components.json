@@ -1,0 +1,454 @@
+[
+  {
+    "_component": "ilt-image",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Component title",
+    "displayTitle": "Component title",
+    "body": "",
+    "_id": "a9aa54ee-905a-441f-8e93-48158bbc0e38",
+    "_parentId": "6683696f-63ab-4f4e-b295-6056f3548620",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": false,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "6683696f-63ab-4f4e-b295-6056f3548620",
+      "__shallowId": "a9aa54ee-905a-441f-8e93-48158bbc0e38",
+      "__shallowParentId": "6683696f-63ab-4f4e-b295-6056f3548620"
+    },
+    "assetFile": "course/en/assets/451f96728688ca3f0d1ae90ac823a46d89b1ebb1.jpg",
+    "alignment": "left"
+  },
+  {
+    "_component": "ilt-list",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Component title",
+    "displayTitle": "Component title",
+    "body": "",
+    "_id": "7d098cf2-88cb-45dc-af6a-b0feb46907cc",
+    "_parentId": "6683696f-63ab-4f4e-b295-6056f3548620",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": true,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "6683696f-63ab-4f4e-b295-6056f3548620",
+      "__shallowId": "7d098cf2-88cb-45dc-af6a-b0feb46907cc",
+      "__shallowParentId": "6683696f-63ab-4f4e-b295-6056f3548620"
+    },
+    "preTextArea": "",
+    "postTextArea": "",
+    "listType": "Blank",
+    "startNum": 0,
+    "listItems": [
+      {
+        "textArea": "<p>raz</p>"
+      },
+      {
+        "textArea": "<p>dwa</p>"
+      },
+      {
+        "textArea": "<p>trxzy</p>"
+      }
+    ]
+  },
+  {
+    "_component": "ilt-image",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Component title",
+    "displayTitle": "Component title",
+    "body": "",
+    "_id": "840b8b29-a9c5-4143-86d2-99b6481dd0a0",
+    "_parentId": "ab29456d-ab5f-44b7-9ee7-45035cbbff37",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": false,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "ab29456d-ab5f-44b7-9ee7-45035cbbff37",
+      "__shallowId": "840b8b29-a9c5-4143-86d2-99b6481dd0a0",
+      "__shallowParentId": "ab29456d-ab5f-44b7-9ee7-45035cbbff37"
+    },
+    "assetFile": "course/en/assets/451f96728688ca3f0d1ae90ac823a46d89b1ebb1.jpg",
+    "alignment": "left"
+  },
+  {
+    "_component": "ilt-list",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Component title",
+    "displayTitle": "Component title",
+    "body": "",
+    "_id": "bf692d71-b080-4704-974f-89c4289e0eb9",
+    "_parentId": "ed3821cd-22a8-4d71-b5cf-2d06b8dd0317",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": true,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "ed3821cd-22a8-4d71-b5cf-2d06b8dd0317",
+      "__shallowId": "bf692d71-b080-4704-974f-89c4289e0eb9",
+      "__shallowParentId": "ed3821cd-22a8-4d71-b5cf-2d06b8dd0317"
+    },
+    "preTextArea": "<p><label for=\"c2364_properties_preTextArea\">Preceeding Text Area</label>&nbsp;</p>",
+    "postTextArea": "<p><label for=\"c2364_properties_postTextArea\">Proceeding Text Area</label>&nbsp;</p>",
+    "listType": "Blank",
+    "startNum": 0,
+    "listItems": [
+      {
+        "textArea": "<p>raz</p>"
+      },
+      {
+        "textArea": "<p>dwa</p>"
+      },
+      {
+        "textArea": "<p>ttzy</p>"
+      },
+      {
+        "textArea": "<p>cztery</p>"
+      },
+      {
+        "textArea": "<p>piec</p>"
+      }
+    ]
+  },
+  {
+    "_component": "ilt-mcq",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "SAQ",
+    "displayTitle": "SAQ",
+    "body": "",
+    "_id": "639f15eb-5d34-4fd1-a8d7-678cd22b224b",
+    "_parentId": "67f86881-8207-4713-9a6c-b1aacf9594eb",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": false,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "67f86881-8207-4713-9a6c-b1aacf9594eb",
+      "__shallowId": "639f15eb-5d34-4fd1-a8d7-678cd22b224b",
+      "__shallowParentId": "67f86881-8207-4713-9a6c-b1aacf9594eb"
+    },
+    "question": "<p>Test single answer question</p>",
+    "shuffle": "1",
+    "retries": 1,
+    "answers": [
+      {
+        "weighting": 0,
+        "correct": true,
+        "answerText": "<p>answer 1</p>",
+        "feedbackText": ""
+      },
+      {
+        "weighting": 0,
+        "correct": false,
+        "answerText": "<p>answer 2</p>",
+        "feedbackText": ""
+      },
+      {
+        "weighting": 0,
+        "correct": false,
+        "answerText": "<p>answer 3</p>",
+        "feedbackText": ""
+      }
+    ]
+  },
+  {
+    "_component": "ilt-drag-image",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Drag image component",
+    "displayTitle": "Drag image component",
+    "body": "",
+    "_id": "80d889e6-1796-405d-bc21-54c84a265ffb",
+    "_parentId": "b0256cdc-eb31-4398-a0c1-5961cea3adf5",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": false,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "b0256cdc-eb31-4398-a0c1-5961cea3adf5",
+      "__shallowId": "80d889e6-1796-405d-bc21-54c84a265ffb",
+      "__shallowParentId": "b0256cdc-eb31-4398-a0c1-5961cea3adf5"
+    },
+    "question": "",
+    "imageField": "course/en/assets/ae80afe0c10f31546ee18d7afb3d9aefdfdc0582.png",
+    "shuffle": "1",
+    "retries": 0,
+    "showDragBorder": true,
+    "showDragZone": true,
+    "showTargets": true,
+    "targetAreas": [
+      {
+        "pcLeft": 25,
+        "pcTop": 25,
+        "pcWidth": 10,
+        "pcHeight": 10
+      }
+    ],
+    "dragItems": [
+      {
+        "imageField": "course/en/assets/fbfe36b89108d1be2861967c8b0613acdf0485df.png",
+        "pcLeft": 0,
+        "pcTop": 0,
+        "pcWidth": 0,
+        "pcHeight": 0
+      }
+    ],
+    "itemTargetMatching": [
+      {
+        "targetAreaIndex": 10,
+        "dragItemIndex": 10,
+        "weightingPc": 10,
+        "feedbackText": ""
+      }
+    ]
+  },
+  {
+    "_component": "ilt-s1000d",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Warning",
+    "displayTitle": "Warning",
+    "body": "<p>Body of the comp</p>",
+    "_id": "dcb8251e-75b4-473f-b50a-0a93bb8524c2",
+    "_parentId": "27f73a50-c1c2-43bc-92ff-925bd3a68086",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": true,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "27f73a50-c1c2-43bc-92ff-925bd3a68086",
+      "__shallowId": "dcb8251e-75b4-473f-b50a-0a93bb8524c2",
+      "__shallowParentId": "27f73a50-c1c2-43bc-92ff-925bd3a68086"
+    },
+    "displayType": "caution",
+    "preTextArea": "<p>Preceeding Text Area</p>",
+    "textAreaField": "<p>Contents</p>",
+    "postTextArea": "<p><label for=\"c4086_properties_postTextArea\">Proceeding Text Area</label>&nbsp;</p>",
+    "audio": ""
+  },
+  {
+    "_component": "ilt-s1000d",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "warning",
+    "displayTitle": "warning",
+    "body": "<p>Warning body</p>",
+    "_id": "0f7a2f20-d983-4580-ad3a-f2594f8a4dd6",
+    "_parentId": "9aaaa545-81e6-480e-bd48-5b3dfe8f9231",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": false,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "9aaaa545-81e6-480e-bd48-5b3dfe8f9231",
+      "__shallowId": "0f7a2f20-d983-4580-ad3a-f2594f8a4dd6",
+      "__shallowParentId": "9aaaa545-81e6-480e-bd48-5b3dfe8f9231"
+    },
+    "displayType": "warning",
+    "preTextArea": "<p>Preceeding Text Area</p>",
+    "textAreaField": "<p>Contents</p>",
+    "postTextArea": "<p>Proceeding Text Area</p>",
+    "audio": ""
+  },
+  {
+    "_component": "ilt-s1000d",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isVisible": true,
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Note comp",
+    "displayTitle": "Note comp",
+    "body": "<p>Body</p>",
+    "_id": "d7844f38-2c3f-4a02-8444-ee4988417365",
+    "_parentId": "a15e8de3-ef6b-4fdb-8148-c3fcc4d7fbc2",
+    "_type": "component",
+    "_layout": "full",
+    "_lockedByUserId": null,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "output": {
+      "ilt": true,
+      "word": false,
+      "iltSettings": {
+        "iltInstructor": false,
+        "iltStudent": true
+      }
+    },
+    "__relations": {
+      "__courseId": "948dec4b-8fcd-45bf-8c4e-33e25400ffaf",
+      "__contentObjectId": "d7357e8f-0c78-4979-b926-d0b8cf7b8892",
+      "__articleId": "2b7b8642-f742-4ce9-9216-6d352c9f838e",
+      "__blockId": "a15e8de3-ef6b-4fdb-8148-c3fcc4d7fbc2",
+      "__shallowId": "d7844f38-2c3f-4a02-8444-ee4988417365",
+      "__shallowParentId": "a15e8de3-ef6b-4fdb-8148-c3fcc4d7fbc2"
+    },
+    "displayType": "note",
+    "preTextArea": "<p>Preceeding Text Area</p>",
+    "textAreaField": "<p>Contents</p>",
+    "postTextArea": "<p>Proceeding Text Area</p>",
+    "audio": ""
+  }
+]

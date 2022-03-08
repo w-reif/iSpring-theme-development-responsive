@@ -1,0 +1,16 @@
+{
+  "name": "author-ilt-s1000d",
+  "version": "0.0.3",
+  "framework": ">=1.5",
+  "homepage": "https://github.com/workbit-io/author-ilt-s1000d",
+  "issues": "https://github.com/workbit-io/author-ilt-s1000d/issues/new",
+  "component" : "ilt-s1000d",
+  "displayName" : "S1000D Component",
+  "description": "Displays Warnings, Cautions, Notes formatted to meet 2000D specifications.",
+  "main": "/js/author-ilt-s1000d.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}
