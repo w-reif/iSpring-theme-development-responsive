@@ -3,18 +3,20 @@
 /*------------------------------------*/
 * {
   font-family: Arial, Georgia, 'Times New Roman';
+  box-sizing: border-box;
 }
 
 body {
-  padding: 25px 25px 0;
-  // height: 100vh;
-  max-width: 1920px;
+  // padding: 25px 25px 0;
+  padding: 0 25px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 html,
 body {
   width: 100%;
-  // height: 95%;
+  height: 100%;
   margin: 0;
   // padding: 15px;
 }
@@ -419,8 +421,16 @@ html {
       }
 
       &__center {
-        padding: 5vh 2vw 0;
+        height: 90% !important;
+        padding: 6vh 2vw 0;
         height: auto;
+
+        .block {
+          &__inner {
+            height: 100%;
+          }
+          height: 100%;
+        }
 
         div > div > div.block__header > div > div > div.block__title-inner {
           font-size: 2vw;
@@ -429,10 +439,11 @@ html {
       }
 
       &__bottom {
-        // width: calc(100% - 8.5vw);
-        width: 87.2vw;
+        width: calc(100% - 8.5vw);
+        // width: 87.2vw;
+        height: 6vh;
         position: absolute;
-        bottom: -10px;
+        bottom: 0;
         // position: relative;
         // bottom: 10vh;
         display: flex;
@@ -443,7 +454,7 @@ html {
           display: flex !important;
           #slideIndex {
             // display: block;
-            right: 25px;
+            right: 17px;
           }
         }
       }
@@ -464,11 +475,11 @@ html {
   position: absolute;
   // bottom: 0;
   height: 3.33px !important;
-  width: 44px;
-  left: 1vw;
+  width: 3vw;
+  // left: 1vw;
   background-color: #e4002b;
-  top: 30px;
-  left: 20px;
+  top: 2vw;
+  left: 1.5vw;
 }
 
 #prevCtrlR {
@@ -476,31 +487,31 @@ html {
   right: 4vw;
   z-index: 10;
   &::after {
-    top: 45px;
+    top: 3vw;
   }
   // top: 10px;
 }
 // #fullScreenCtrl {
 // }
 // #fullScreenCtrl::after {
-//   top: 30px;
+//   top: 35px;
 //   left: 20px;
 //   // z-index: 3;
 // }
 #prevCtrlL {
   &::after {
     // position: absolute;
-    top: 45px;
+    top: 3vw;
   }
 }
 
 .slideIndexBg {
   // position: relative;
   // right: 30px;
-  width: 60px;
-  min-width: 30px;
+  // width: 60px;
+  min-width: 0;
   // max-width: 60px;
-  height: 53px;
+  height: 100%;
   // height: 53px;
   z-index: 0;
 }
@@ -572,7 +583,7 @@ html {
   .block,
   .block__inner,
   .component__container {
-    height: 99%;
+    // height: 100%;
     width: 100%;
     max-width: 100%;
   }
@@ -583,12 +594,16 @@ html {
     flex-direction: column;
     align-items: center;
     // justify-content: center;
+    // height: 500px;
   }
   .component {
     width: 100%;
     display: flex;
     justify-content: center;
     height: 72vh;
+    > div {
+      padding: 3vh 3vw;
+    }
     div {
       width: 100%;
       img {
@@ -604,13 +619,30 @@ html {
   }
 }
 
-@media only screen and (min-width: 1920px) {
+@media all and (display-mode: fullscreen) {
   .presentationWindow__inner__block-brand {
     height: 150px;
     width: 100px;
   }
-  .presentationWindow__inner__content__bottom {
-    width: calc(100% - 8.5vw);
+  .presentationWindow__inner__content {
+    &__center {
+      padding-top: 6.5vh;
+    }
+    &__bottom {
+      width: calc(100% - 8.5vw);
+      .presentationCtrl {
+        bottom: 30px;
+      }
+    }
+  }
+  .component {
+    height: 83vh !important;
+  }
+  // .presentationWindow__inner__content__bottom__end {
+  .slideIndexBg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -631,6 +663,36 @@ html {
   }
 }
 
+.ilt-s1000d {
+  height: 75vh;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-pre {
+    max-height: 10%;
+    float: left;
+  }
+  &-post {
+    max-height: 10%;
+  }
+  &-caution,
+  &-warning,
+  &-note {
+    height: 80%;
+    aspect-ratio: 1.58;
+    width: 75% !important;
+  }
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 25px;
+    // align-items: center;
+  }
+}
+
 /*------------------------------------*/
 /*--- Styles for development ---*/
 /*------------------------------------*/
@@ -645,6 +707,10 @@ html {
   > div
   > div
   > p {
+  display: none;
+}
+
+#adapt > grammarly-desktop-integration {
   display: none;
 }
 
