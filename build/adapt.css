@@ -1523,12 +1523,12 @@ html.adapt-scrolling #wrapper {
   align-items: center;
 }
 #presentationWindow__endBlock .END_BLOCK__contents__brand img {
-  width: 14vw;
+  width: 18vw;
 }
 #presentationWindow__endBlock .END_BLOCK__contents__courseware {
-  left: 148.168px;
-  top: 28.14px;
-  font-weight: normal;
+  font-weight: 600;
+  font-size: 4vh;
+  padding-top: 5vh;
 }
 #presentationWindow__startBlock {
   display: none;
@@ -1546,8 +1546,6 @@ html.adapt-scrolling #wrapper {
 #presentationWindow__startBlock .START_BLOCK__contents__brand img {
   height: 27.8125vw;
   width: 19.396vw;
-  max-height: 400px;
-  max-width: 305px;
 }
 #presentationWindow__startBlock .START_BLOCK__contents__customer,
 #presentationWindow__startBlock .START_BLOCK__contents__courseware,
@@ -1571,7 +1569,6 @@ html.adapt-scrolling #wrapper {
   text-align: center;
   font-size: 1.4vh;
   padding-top: 5px;
-  line-height: 10.5px;
 }
 /*------------------------------------*/
 /*--- Key Styles ---*/
@@ -1581,7 +1578,7 @@ html.adapt-scrolling #wrapper {
   box-sizing: border-box;
 }
 body {
-  padding: 0 25px;
+  padding: 25px;
   height: 100vh;
   overflow: hidden;
 }
@@ -1938,12 +1935,11 @@ footer {
 }
 .presentationWindow__inner {
   margin: 0 auto;
-  max-height: 100vh;
+  max-height: 100%;
   position: relative;
 }
 .presentationWindow__inner__block-img {
-  max-width: 100%;
-  height: 100%;
+  height: 101%;
   position: absolute;
 }
 .presentationWindow__inner__block-brand {
@@ -1961,7 +1957,6 @@ footer {
   height: 100%;
   position: absolute;
   padding-left: 8.5vw;
-  padding-bottom: 10px;
 }
 .presentationWindow__inner__content__top {
   position: absolute;
@@ -1969,7 +1964,7 @@ footer {
 .presentationWindow__inner__content__center {
   height: 90% !important;
   padding: 6vh 2vw 0;
-  height: auto;
+  overflow: hidden;
 }
 .presentationWindow__inner__content__center .block {
   height: 100%;
@@ -1993,7 +1988,7 @@ footer {
   display: flex !important;
 }
 .presentationWindow__inner__content__bottom__end #slideIndex {
-  right: 17px;
+  right: 40px;
 }
 .presentationCtrl {
   position: relative;
@@ -2011,7 +2006,7 @@ footer {
   left: 1.5vw;
 }
 #prevCtrlR {
-  right: 4vw;
+  right: 10vw;
   z-index: 10;
 }
 #prevCtrlR::after {
@@ -2021,6 +2016,7 @@ footer {
   top: 3vw;
 }
 .slideIndexBg {
+  position: absolute;
   min-width: 0;
   height: 100%;
   z-index: 0;
@@ -2029,7 +2025,6 @@ footer {
   position: absolute;
   z-index: 1;
   bottom: 0;
-  right: 0;
   color: white;
 }
 .nav,
@@ -2154,6 +2149,9 @@ footer {
 .ilt-s1000d {
   height: 75vh;
 }
+.ilt-s1000d p {
+  font-size: 3vh;
+}
 .ilt-s1000d > div {
   display: flex;
   flex-direction: column;
@@ -2172,12 +2170,16 @@ footer {
   height: 80%;
   aspect-ratio: 1.58;
   width: 75% !important;
+  margin: 10px;
 }
 .ilt-s1000d-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 15px 25px;
+}
+.ilt-drag-image-choiceContainer {
+  padding: 0;
 }
 /*------------------------------------*/
 /*--- Styles for development ---*/

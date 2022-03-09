@@ -8,7 +8,7 @@
 
 body {
   // padding: 25px 25px 0;
-  padding: 0 25px;
+  padding: 25px;
   height: 100vh;
   overflow: hidden;
 }
@@ -387,12 +387,12 @@ html {
   &__inner {
     margin: 0 auto;
     // overflow: hidden;
-    max-height: 100vh;
+    max-height: 100%;
     position: relative;
 
     &__block-img {
-      max-width: 100%;
-      height: 100%;
+      // max-width: 100%;
+      height: 101%;
       position: absolute;
     }
     &__block-brand {
@@ -414,7 +414,7 @@ html {
       position: absolute;
       padding-left: 8.5vw;
       // padding-top: 10px;
-      padding-bottom: 10px;
+      // padding-bottom: 10px;
 
       &__top {
         position: absolute;
@@ -423,7 +423,8 @@ html {
       &__center {
         height: 90% !important;
         padding: 6vh 2vw 0;
-        height: auto;
+        // height: auto;
+        overflow: hidden;
 
         .block {
           &__inner {
@@ -454,7 +455,7 @@ html {
           display: flex !important;
           #slideIndex {
             // display: block;
-            right: 17px;
+            right: 40px;
           }
         }
       }
@@ -484,7 +485,7 @@ html {
 
 #prevCtrlR {
   // position: relative;
-  right: 4vw;
+  right: 10vw;
   z-index: 10;
   &::after {
     top: 3vw;
@@ -506,7 +507,7 @@ html {
 }
 
 .slideIndexBg {
-  // position: relative;
+  position: absolute;
   // right: 30px;
   // width: 60px;
   min-width: 0;
@@ -520,7 +521,7 @@ html {
   position: absolute;
   z-index: 1;
   bottom: 0;
-  right: 0;
+  // right: 20px;
   color: white;
 }
 
@@ -691,6 +692,9 @@ html {
 
 .ilt-s1000d {
   height: 75vh;
+  p {
+    font-size: 3vh;
+  }
   > div {
     display: flex;
     flex-direction: column;
@@ -709,6 +713,7 @@ html {
     height: 80%;
     aspect-ratio: 1.58;
     width: 75% !important;
+    margin: 10px;
   }
   &-body {
     display: flex;
@@ -717,6 +722,10 @@ html {
     padding: 15px 25px;
     // align-items: center;
   }
+}
+
+.ilt-drag-image-choiceContainer {
+  padding: 0;
 }
 
 /*------------------------------------*/
