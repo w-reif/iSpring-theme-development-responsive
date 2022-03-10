@@ -147,16 +147,21 @@ define(['core/js/adapt', 'libraries/mobx'], function (Adapt, mobx) {
 
       $('#fullScreenCtrl').on('click', function () {
         var element = document.querySelector('.presentationWindow__inner');
-        element.requestFullscreen().then(function () {});
+        // element.requestFullscreen().then(function () {});
+        console.log(element.fullscreenElement);
+        // element.fullscreenElement
+        window.innerHeight == screen.height
+          ? document.exitFullscreen()
+          : element.requestFullscreen();
       });
 
-      $('.presentationWindow__inner').on('fullscreenchange', function () {
-        var display = $('#fullScreenCtrl').css('display');
-        $('#fullScreenCtrl').css(
-          'display',
-          display === 'none' ? 'block' : 'none'
-        );
-      });
+      // $('.presentationWindow__inner').on('fullscreenchange', function () {
+      //   var display = $('#fullScreenCtrl').css('display');
+      //   $('#fullScreenCtrl').css(
+      //     'display',
+      //     display === 'none' ? 'block' : 'none'
+      //   );
+      // });
     },
 
     renderBlock: function (currentBlock) {
