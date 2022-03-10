@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/theme/model.schema",
+  "properties": {
+    "variables": {
+      "_global": {
+        "type": "object"
+      }
+    },
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

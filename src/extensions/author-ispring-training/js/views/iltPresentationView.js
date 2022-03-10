@@ -1,24 +1,24 @@
-define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
+define(['core/js/adapt', 'libraries/mobx'], function (Adapt, mobx) {
   var ILTPresentationView = Backbone.View.extend({
     globalElements: {
-      wrapper: "#wrapper",
-      app: "#app",
+      wrapper: '#wrapper',
+      app: '#app',
     },
 
     handlers: {
       instructor: {
-        jumpTo: "iltInstructor:jumpToSlide",
+        jumpTo: 'iltInstructor:jumpToSlide',
       },
       adapt: {
-        pageReady: "pageView:ready",
-        menuReady: "menuView:ready",
-        routerMenu: "router:menu",
-        routerPage: "router:page",
+        pageReady: 'pageView:ready',
+        menuReady: 'menuView:ready',
+        routerMenu: 'router:menu',
+        routerPage: 'router:page',
       },
     },
 
     setState: function () {
-      var isDoubleScreen = window.name === "contntWdw";
+      var isDoubleScreen = window.name === 'contntWdw';
       if (isDoubleScreen) {
         this.state = opener.Adapt.stateManager.state;
       }
@@ -38,7 +38,7 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
       };
 
       window.addEventListener(
-        "message",
+        'message',
         function (event) {
           var eventHandler = this.evs[event.data.label];
           eventHandler && eventHandler(event.data);
@@ -46,11 +46,10 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
       );
     },
 
-
     centerWindow: function () {
-      $("body").css("display", "flex");
-      $("body").css("flex-direction", "column");
-      $("body").css("justify-content", "center");
+      $('body').css('display', 'flex');
+      $('body').css('flex-direction', 'column');
+      $('body').css('justify-content', 'center');
     },
 
     /**
@@ -64,36 +63,35 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
       var currentBlockIndex = Adapt.stateManager.state.currentBlockIndex + 1;
 
       $(globalElements.app).append(
-        Handlebars.templates["presentationWindow"]({
+        Handlebars.templates['presentationWindow']({
           currentBlockIndex: currentBlockIndex,
         })
       );
       this.setupILTEvents();
-      $("#presentationWindow__startBlock").append(
-        Handlebars.templates["ispringBlockStart"]()
+      $('#presentationWindow__startBlock').append(
+        Handlebars.templates['ispringBlockStart']()
       );
-      $("#presentationWindow__endBlock").append(
-        Handlebars.templates["ispringBlockEnd"]()
+      $('#presentationWindow__endBlock').append(
+        Handlebars.templates['ispringBlockEnd']()
       );
 
-      $(".presentationWindow__inner__content__center").on("click", function () {
-        opener.postMessage({ label: "WB_NEXT" });
+      $('.presentationWindow__inner__content__center').on('click', function () {
+        opener.postMessage({ label: 'WB_NEXT' });
       });
-      $("#presentationWindow__startBlock").on("click", function () {
-        opener.postMessage({ label: "WB_NEXT" });
+      $('#presentationWindow__startBlock').on('click', function () {
+        opener.postMessage({ label: 'WB_NEXT' });
       });
 
-      $("#prevCtrlL").on("click", function () {
-        opener.postMessage({ label: "WB_BACK" });
+      $('#prevCtrlL').on('click', function () {
+        opener.postMessage({ label: 'WB_BACK' });
       });
-      
+
       this.listenTo(Adapt, {
-        "device:changed": this.onDeviceResize,
+        'device:changed': this.onDeviceResize,
       });
     },
 
-
-    onDeviceResize: function() {
+    onDeviceResize: function () {
       var h = 1;
       var w = 1;
     },
@@ -111,7 +109,7 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
       this.goToBlock(data.value);
     },
     enterFullScreen: function () {
-      var element = document.querySelector("#container");
+      var element = document.querySelector('#container');
       element.requestFullscreen().then(function () {});
     },
     exitFullScreen: function () {
@@ -130,9 +128,9 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
      * (when hash route changes it triggers pageRender events)
      */
     loadContentOnPageRender: function () {
-      $(".article").hide();
-      $(".block").hide();
-      $(".component").hide();
+      $('.article').hide();
+      $('.block').hide();
+      $('.component').hide();
       this.goToBlock(Adapt.stateManager.state.currentBlockIndex);
     },
 
@@ -144,26 +142,34 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
         [adapt.pageReady]: this.loadContentOnPageRender.bind(this),
       });
 
-      $("#fullScreenCtrl").on("click", function () {
-        var element = document.querySelector(".presentationWindow__inner");
+      $('#fullScreenCtrl').on('click', function () {
+        var element = document.querySelector('.presentationWindow__inner');
         element.requestFullscreen().then(function () {});
       });
 
-      $(".presentationWindow__inner").on("fullscreenchange", function () {
-        var display = $("#fullScreenCtrl").css("display");
-        $("#fullScreenCtrl").css(
-          "display",
-          display === "none" ? "block" : "none"
+      $('.presentationWindow__inner').on('fullscreenchange', function () {
+        var display = $('#fullScreenCtrl').css('display');
+        $('#fullScreenCtrl').css(
+          'display',
+          display === 'none' ? 'block' : 'none'
         );
       });
     },
 
     renderBlock: function (currentBlock) {
-      var id = currentBlock.get("_id");
-      if (["START_BLOCK", "END_BLOCK"].includes(id)) {
+      var id = currentBlock.get('_id');
+      if (['START_BLOCK', 'END_BLOCK'].includes(id)) {
+        // $('.presentationWindow__inner__content__bottom').css(
+        //   'display',
+        //   'none !important'
+        // );
         return;
       }
-      var content = $(".presentationWindow__inner__content__center").first();
+      // $('.presentationWindow__inner__content__bottom').css(
+      //   'display',
+      //   'flex !important'
+      // );
+      var content = $('.presentationWindow__inner__content__center').first();
       var currentArticle = currentBlock.getParent();
 
       var componentsInView = currentBlock
@@ -174,9 +180,9 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
       console.log(componentsInView.length);
 
       var selector1 =
-        ".article__container > .article." + currentArticle.get("_id");
+        '.article__container > .article.' + currentArticle.get('_id');
       var $block = $(selector1)
-        .find(".block__container > .block." + currentBlock.get("_id"))
+        .find('.block__container > .block.' + currentBlock.get('_id'))
         .first()
         .detach();
 
@@ -185,59 +191,74 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
     },
 
     mountBlockBack: function (blockId) {
-      var content = $(".presentationWindow__inner__content__center").first();
+      var content = $('.presentationWindow__inner__content__center').first();
       var children = content.children();
       var $block = children.first().detach();
-      var blockId = $block.data("adapt-id");
+      var blockId = $block.data('adapt-id');
       var blockModel = Adapt.blocks.models.find(
-        (m) => m.get("_id").toString() === blockId
+        (m) => m.get('_id').toString() === blockId
       );
 
       var previousArticle = blockModel.getParent();
       var selector1 =
-        ".article__container > .article." + previousArticle.get("_id");
-      $(selector1).find(".block__container").append($block);
+        '.article__container > .article.' + previousArticle.get('_id');
+      $(selector1).find('.block__container').append($block);
     },
 
     loadSlideIndex: function (blockIndex) {
-      $(".slideIndex").html(1 + blockIndex);
+      $('.slideIndex').html(1 + blockIndex);
     },
 
     showStartSlide: function () {
-      $(".presentationWindow__inner__content__center").hide();
-      $("#presentationWindow__endBlock").hide();
-      $(".presentationWindow__inner__block-img").hide();
-      $(".presentationWindow__inner__block-brand").hide();
-      $(".presentationWindow__inner__content__bottom__end").hide();
-      $("#presentationWindow__startBlock").show();
+      $('.presentationWindow__inner__content__center').hide();
+      $('#presentationWindow__endBlock').hide();
+      $('.presentationWindow__inner__block-img').hide();
+      $('.presentationWindow__inner__block-brand').hide();
+      $('.presentationWindow__inner__content__bottom__end').hide();
+      $('.presentationWindow__inner__content__bottom').hide();
+      $('#presentationWindow__startBlock').show();
+      $('.presentationWindow__inner__content__bottom').css(
+        'display',
+        'none !important'
+      );
     },
 
     showEndSlide: function () {
-      $(".presentationWindow__inner__content__center").hide();
-      $("#presentationWindow__startBlock").hide();
-      $(".presentationWindow__inner__block-img").hide();
-      $(".presentationWindow__inner__block-brand").hide();
-      $(".presentationWindow__inner__content__bottom__end").hide();
-      $("#presentationWindow__endBlock").show();
+      $('.presentationWindow__inner__content__center').hide();
+      $('#presentationWindow__startBlock').hide();
+      $('.presentationWindow__inner__block-img').hide();
+      $('.presentationWindow__inner__block-brand').hide();
+      $('.presentationWindow__inner__content__bottom__end').hide();
+      $('.presentationWindow__inner__content__bottom').hide();
+      $('#presentationWindow__endBlock').show();
+      $('.presentationWindow__inner__content__bottom').css(
+        'display',
+        'none !important'
+      );
     },
 
     showContentSlide: function () {
-      var startBlock = $("#presentationWindow__startBlock");
+      var startBlock = $('#presentationWindow__startBlock');
       startBlock.hide();
-      var endBlock = $("#presentationWindow__endBlock");
+      var endBlock = $('#presentationWindow__endBlock');
       endBlock.hide();
-      $(".presentationWindow__inner__content__bottom__end").show();
-      $(".presentationWindow__inner__block-img").show();
-      $(".presentationWindow__inner__block-brand").show();
-      var coursewareBlock = $(".presentationWindow__inner__content__center");
+      $('.presentationWindow__inner__content__bottom__end').show();
+      $('.presentationWindow__inner__content__bottom').css('display', 'flex');
+      $('.presentationWindow__inner__block-img').show();
+      $('.presentationWindow__inner__block-brand').show();
+      var coursewareBlock = $('.presentationWindow__inner__content__center');
       coursewareBlock.show();
+      $('.presentationWindow__inner__content__bottom').css(
+        'display',
+        'flex !important'
+      );
     },
 
     handleSlideDisplay: function (blockId) {
-      if (blockId === "START_BLOCK") {
+      if (blockId === 'START_BLOCK') {
         this.showStartSlide();
         return;
-      } else if (blockId === "END_BLOCK") {
+      } else if (blockId === 'END_BLOCK') {
         this.showEndSlide();
         return;
       }
@@ -245,9 +266,9 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
     },
 
     loadBlockView: function (currentBlock) {
-      var blockId = currentBlock.get("_id");
+      var blockId = currentBlock.get('_id');
       this.handleSlideDisplay(blockId);
-      var content = $(".presentationWindow__inner__content__center").first();
+      var content = $('.presentationWindow__inner__content__center').first();
       var children = content.children();
 
       if (children.length === 0) {
@@ -260,8 +281,8 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
 
     isILTPresentationComponent: function (component) {
       if (!component) return false;
-      var outputTypes = component.get("output");
-      var metadata = component.get("__metadata");
+      var outputTypes = component.get('output');
+      var metadata = component.get('__metadata');
 
       if (!outputTypes) return false;
 
@@ -272,7 +293,7 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
     },
 
     showPresentationComponent: function (component) {
-      var selector = ".component." + component.get("_id").toString();
+      var selector = '.component.' + component.get('_id').toString();
       var $comp = $(selector);
       $comp.show();
     },

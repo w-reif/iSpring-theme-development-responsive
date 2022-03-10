@@ -2201,4 +2201,807 @@ footer {
 /*------------------------------------*/
 /*--- Main styles ---*/
 /*------------------------------------*/
+.universal-control-panel {
+  display: none;
+}
+.content-area .with-border #playerView::after {
+  border: 0px solid transparent;
+}
+.content-area:fullscreen #fsBtn {
+  display: none !important;
+}
+.kern.slide {
+  user-select: all;
+}
+.lh_prev {
+  position: absolute;
+  line-height: 5.5;
+  bottom: -40px;
+  font-size: 25px;
+}
+#prevBtnL {
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+#prevBtnL.lh_prev {
+  left: 8.2%;
+}
+#prevBtnR.lh_prev {
+  right: 8.2%;
+}
+#fsBtn {
+  position: relative;
+  line-height: 5.5;
+  font-size: 25px;
+  font-weight: 600;
+  top: -75px;
+  left: 8.2%;
+}
+#prevBtnL,
+#prevBtnL:hover,
+#prevBtnL:focus,
+#prevBtnL:active {
+  color: #333;
+  transition: 0.4s ease-out all 0.1s;
+  text-decoration: none;
+}
+#prevBtnL::after {
+  content: '';
+  position: absolute;
+}
+#prevBtnL::after {
+  top: 65%;
+  height: 5px !important;
+  width: 40%;
+  left: 30%;
+  background-color: #e4002b;
+  transition: 0.4s ease-out all 0.1s;
+}
+#prevBtnR {
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+#prevBtnR,
+#prevBtnR:hover,
+#prevBtnR:focus,
+#prevBtnR:active {
+  color: #333;
+  transition: 0.4s ease-out all 0.1s;
+  text-decoration: none;
+}
+#prevBtnR::after {
+  content: '';
+  position: absolute;
+}
+#prevBtnR::after {
+  top: 65%;
+  height: 5px !important;
+  width: 40%;
+  left: 30%;
+  background-color: #e4002b;
+  transition: 0.4s ease-out all 0.1s;
+}
+#fsBtn {
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+#fsBtn,
+#fsBtn:hover,
+#fsBtn:focus,
+#fsBtn:active {
+  color: #333;
+  transition: 0.4s ease-out all 0.1s;
+  text-decoration: none;
+}
+#fsBtn::after {
+  content: '';
+  position: absolute;
+}
+#fsBtn::after {
+  top: 65%;
+  height: 5px !important;
+  width: 40%;
+  left: 30%;
+  background-color: #e4002b;
+  transition: 0.4s ease-out all 0.1s;
+}
+.loading__inner {
+  display: none !important;
+}
+#presentationWindow__endBlock {
+  display: none;
+  padding: 4rem;
+  padding-right: calc(8.5vw + 4rem);
+  height: 100%;
+}
+#presentationWindow__endBlock #END_BLOCK,
+#presentationWindow__endBlock .END_BLOCK__contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#presentationWindow__endBlock .END_BLOCK__contents__brand img {
+  width: 18vw;
+}
+#presentationWindow__endBlock .END_BLOCK__contents__courseware {
+  font-weight: 600;
+  font-size: 4vh;
+  padding-top: 5vh;
+}
+#presentationWindow__startBlock {
+  display: none;
+  padding: 1rem 4rem 4rem 4rem;
+  height: 100%;
+  padding-right: 8.5vw;
+}
+#presentationWindow__startBlock #START_BLOCK,
+#presentationWindow__startBlock .START_BLOCK__contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#presentationWindow__startBlock .START_BLOCK__contents__brand img {
+  height: 27.8125vw;
+  max-height: 500px;
+}
+#presentationWindow__startBlock .START_BLOCK__contents__customer,
+#presentationWindow__startBlock .START_BLOCK__contents__courseware,
+#presentationWindow__startBlock .START_BLOCK__contents__job-role {
+  font-weight: 600;
+  font-size: 2vw;
+}
+#presentationWindow__startBlock .START_BLOCK__contents__customer {
+  padding-top: 3vh;
+}
+#presentationWindow__startBlock .START_BLOCK__contents__chapters div {
+  font-size: 16.47px;
+  font-weight: 600;
+}
+#presentationWindow__startBlock .START_BLOCK__contents__copyright {
+  font-size: 9px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+#presentationWindow__startBlock .START_BLOCK__contents__disclaimer {
+  text-align: center;
+  font-size: 1.4vh;
+  padding-top: 5px;
+}
+/*------------------------------------*/
+/*--- Key Styles ---*/
+/*------------------------------------*/
+* {
+  font-family: Arial, Georgia, 'Times New Roman';
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+h1 {
+  font-family: Arial, Georgia, 'Times New Roman';
+  font-size: 25px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 600;
+}
+p {
+  margin: 0;
+  font-family: Arial, Georgia, 'Times New Roman';
+  line-height: 1.5;
+}
+.bold {
+  font-weight: bold;
+  padding-left: 20px;
+}
+/*------------------------------------*/
+/*--- Header Styles ---*/
+/*------------------------------------*/
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #e4002b;
+}
+.headerWrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 5px;
+}
+.headerLogo {
+  background-image: url('assets/cust_logo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  display: inline-block;
+  position: relative;
+  left: -5px;
+  height: 80px;
+  width: 57px;
+}
+.headerWrap h1 {
+  padding-left: 20px;
+}
+/*------------------------------------*/
+/*--- Main Body Styles ---*/
+/*------------------------------------*/
+main {
+  display: block;
+  width: 100%;
+  height: calc(100% - 80px - 31px);
+}
+.controlPnl {
+  width: calc(100% - 125px);
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.img-con {
+  height: 100%;
+}
+.clearD {
+  clear: both;
+}
+.controlPnl > div > a {
+  pointer-events: none;
+}
+.controlPnl {
+  display: inline-block;
+  float: left;
+}
+.img-con {
+  background-image: url(../images/AW101.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 740px;
+}
+/*------------------------------------*/
+/*--- Slider Styles ---*/
+/*------------------------------------*/
+.slideCont {
+  position: absolute;
+  bottom: 117px;
+  height: 620px;
+  padding-left: 20px;
+  max-width: 960px;
+}
+.splide__slide {
+  cursor: pointer;
+}
+.splide__slide img {
+  width: 102px;
+  height: auto;
+}
+#slideTitle {
+  font-weight: 600;
+  padding: 20px 20px 10px 20px;
+}
+#thumbList {
+  width: 110px;
+  list-style: left;
+  padding-left: 0;
+  margin: 0px;
+}
+#thumblist img #thumbList > li {
+  border: 3px solid transparent;
+}
+#thumbList > li.lh_thumb_selected {
+  border: 3px solid #e4002b;
+  width: 102px;
+}
+.thumbStrip {
+  float: left;
+  width: 125px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+}
+/*------------------------------------*/
+/*------ General Styles for Grid ------*/
+/*------------------------------------*/
+.box-c > a {
+  margin-top: -70px;
+  margin-bottom: -18px;
+}
+.box-c {
+  height: 75px !important;
+  min-height: 75px !important;
+}
+.box-c,
+.box-b {
+  display: inline-block;
+  float: left;
+  width: calc(25% - 1px);
+  background-color: #333;
+  height: calc(25% - 0px);
+  min-height: 245px;
+  text-align: center;
+  cursor: pointer;
+  font-family: Arial, Georgia, 'Times New Roman';
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.box-c.split {
+  width: calc(25% - 1px);
+  display: inline-block;
+  float: left;
+  border-right: 1px solid #fff;
+}
+.box-c.split.r {
+  border-right: 1px solid #fff;
+}
+.box-c.b {
+  border-bottom: none;
+}
+.box-c a {
+  line-height: 9.5;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.box-c a:hover {
+  color: #fff;
+}
+/*------------------------------------*/
+/*------ Basic Underline Styles ------*/
+/*------------------------------------*/
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: #333;
+  transition: 0.4s ease-out all 0.1s;
+  text-decoration: none;
+}
+.custom-underline::after {
+  content: '';
+  position: absolute;
+}
+.box-c .custom-underline::after {
+  top: 65%;
+  height: 5px !important;
+  width: 40%;
+  left: 30%;
+  background-color: #e4002b;
+  transition: 0.4s ease-out all 0.1s;
+}
+.box-c:hover .custom-underline::after {
+  width: 90%;
+  left: 5%;
+  transition: 0.5s ease all;
+}
+/*------------------------------------*/
+/*--- Footer Styles ---*/
+/*------------------------------------*/
+footer {
+  width: 100%;
+  display: block;
+  float: left;
+  height: 100px;
+  background-color: #202020;
+}
+.noteWrap {
+  background-color: #fff;
+}
+.notesContent {
+  padding: 10px 20px 20px;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+#addlNotesDiv {
+  display: block !important;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  color: #333 !important;
+  font-size: 21px !important;
+  font-family: Arial, Georgia, 'Times New Roman';
+  line-height: 1.5;
+}
+#slideTitle {
+  padding-left: 24px !important;
+  background-color: #fff !important;
+  margin: 0px !important;
+  color: #333;
+  height: 30px;
+}
+.collapsible {
+  background-color: #202020;
+  color: #fff;
+  cursor: pointer;
+  height: 100px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+.collapsible:after {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  position: relative;
+  top: -40px;
+  font-size: 20px;
+}
+.active:after {
+  content: '\2212';
+}
+.active,
+.collapsible:hover {
+  background-color: #333;
+}
+.content {
+  padding: 0px 20px 60px;
+  display: none;
+  background-color: #fff;
+}
+/*------------------------------------*/
+/*--- Sticky Footer Styles ---*/
+/*------------------------------------*/
+.footStick {
+  width: 100%;
+  position: fixed;
+  height: 22px;
+  bottom: 0;
+  padding: 5px 20px;
+  background-color: #6d6d6d;
+}
+.stickCenter {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  line-height: 1.6;
+  font-family: Arial, Georgia, 'Times New Roman';
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+.stickCenter label {
+  padding-right: 5px;
+  font-size: 13px;
+}
+.footStick h2 {
+  display: inline-block;
+  float: left;
+  margin: 0;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .bgSplash {
+    display: none !important;
+  }
+  #slideTitle {
+    font-size: 15px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  #addlNotesDiv {
+    font-size: 14px !important;
+  }
+  .box-c,
+  .box-b {
+    width: calc(50% - 1px);
+    font-size: 40px;
+  }
+  .box-c a,
+  .box-b a {
+    line-height: 8;
+    color: #fff;
+    font-size: 14px;
+  }
+  .noteWrap {
+    background-color: #fff;
+  }
+  .box-c.split {
+    width: calc(50% - 1px);
+    float: right;
+  }
+  .controlPnl {
+    width: calc(100% - 125px);
+  }
+  .noteWrap h1 {
+    font-size: 20px;
+  }
+  .stickCenter {
+    font-size: 11px;
+  }
+}
+.presentationWindow {
+  padding: 25px;
+}
+.presentationWindow__inner {
+  margin: 0 auto;
+  max-height: 100%;
+  position: relative;
+}
+.presentationWindow__inner__block-img {
+  height: 101%;
+  position: absolute;
+}
+.presentationWindow__inner__block-brand {
+  position: absolute;
+  min-width: unset !important;
+  max-width: unset !important;
+  left: 17px;
+  top: 10px;
+  transform-origin: 0px 0px;
+  width: 5vw;
+  height: auto;
+}
+.presentationWindow__inner__content {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-left: 8.5vw;
+}
+.presentationWindow__inner__content__top {
+  position: absolute;
+}
+.presentationWindow__inner__content__center {
+  height: 90% !important;
+  padding: 6vh 2vw 0;
+  overflow: hidden;
+}
+.presentationWindow__inner__content__center .block {
+  height: 100%;
+}
+.presentationWindow__inner__content__center .block__inner {
+  height: 100%;
+}
+.presentationWindow__inner__content__center div > div > div.block__header > div > div > div.block__title-inner {
+  font-size: 2vw;
+  font-weight: 600;
+}
+.presentationWindow__inner__content__bottom {
+  width: calc(100% - 8.5vw);
+  height: 6vh;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.presentationWindow__inner__content__bottom__end {
+  display: flex;
+}
+.presentationWindow__inner__content__bottom__end #slideIndex {
+  right: 40px;
+}
+.presentationCtrl {
+  position: relative;
+  font-size: 1.3vw;
+  font-weight: 600;
+  background-color: transparent;
+}
+.presentationCtrl::after {
+  content: '';
+  position: absolute;
+  height: 3.33px !important;
+  width: 3vw;
+  background-color: #e4002b;
+  top: 2vw;
+  left: 1.5vw;
+}
+#prevCtrlR {
+  right: 10vw;
+  z-index: 10;
+}
+#prevCtrlR::after {
+  top: 3vw;
+}
+#prevCtrlL::after {
+  top: 3vw;
+}
+.slideIndexBg {
+  position: absolute;
+  min-width: 0;
+  height: 100%;
+  z-index: 0;
+}
+.slideIndex {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  color: white;
+}
+.nav,
+.nav__inner {
+  display: none !important;
+}
+.thumbnailMode {
+  border: 1px solid red !important;
+}
+.thumbnailMode__capture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.5rem;
+  color: dodgerblue;
+  background-color: transparent;
+}
+.thumbnailMode__capture:hover {
+  background-color: gainsboro;
+}
+.thumbnailMode__cancelCapture,
+.thumbnailMode__saveCapture,
+.thumbnailMode__captured {
+  display: none !important;
+}
+.presentationWindow__inner__block-img,
+.presentationWindow__inner__block-brand,
+.presentationWindow__inner__content__center,
+.presentationWindow__inner__content__bottom,
+.presentationWindow__inner__content__bottom__end {
+  display: none;
+}
+.presentationWindow {
+  background-color: white;
+  width: 100%;
+}
+.presentationWindow__inner {
+  height: 92vh;
+}
+.presentationWindow__inner #presentationWindow__startBlock {
+  padding-left: 0;
+}
+.presentationWindow__inner .presentationWindow__inner__content,
+.presentationWindow__inner .presentationWindow__inner__content__center,
+.presentationWindow__inner .block,
+.presentationWindow__inner .block__inner,
+.presentationWindow__inner .component__container {
+  width: 100%;
+  max-width: 100%;
+}
+.presentationWindow__inner .component__container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: column;
+  align-items: center;
+}
+.presentationWindow__inner .component {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-height: 72vh;
+}
+.presentationWindow__inner .component > div {
+  padding: 3vh 3vw;
+}
+.presentationWindow__inner .component div {
+  width: 100%;
+}
+.presentationWindow__inner .component div img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 0;
+}
+@media only screen and (min-width: 1920px) {
+  .component {
+    max-height: 750px;
+  }
+  .ilt-drag-image-choiceContainer {
+    max-height: 50vh;
+  }
+}
+@media only screen and (min-width: 1920px) and (max-height: 1080px) {
+  #prevCtrlL::after,
+  #prevCtrlR::after {
+    top: 2.5vw;
+  }
+}
+@media all and (display-mode: fullscreen) {
+  .presentationWindow {
+    background-color: white;
+  }
+  .presentationWindow__inner__block-brand {
+    height: 150px;
+    width: 100px;
+  }
+  .presentationWindow__inner__content__center {
+    padding-top: 6.5vh;
+  }
+  .presentationWindow__inner__content__bottom {
+    width: calc(100% - 8.5vw);
+  }
+  .presentationWindow__inner__content__bottom .presentationCtrl {
+    bottom: 30px;
+  }
+  .presentationWindow__inner__content__bottom #prevCtrlR {
+    right: 10vw;
+  }
+  .presentationWindow__inner__content__bottom #prewCtrlL {
+    padding-left: 1vw;
+  }
+  .slideIndexBg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+.ilt-image div {
+  display: flex;
+  justify-content: center;
+}
+.ilt-list {
+  font-size: 2vw;
+}
+.ilt-list .ilt-list-list p {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.ilt-s1000d {
+  height: 75vh;
+}
+.ilt-s1000d p {
+  font-size: 3vh;
+}
+.ilt-s1000d > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ilt-s1000d-pre {
+  max-height: 10%;
+  float: left;
+}
+.ilt-s1000d-post {
+  max-height: 10%;
+}
+.ilt-s1000d-caution,
+.ilt-s1000d-warning,
+.ilt-s1000d-note {
+  height: 80%;
+  aspect-ratio: 1.58;
+  width: 75% !important;
+  margin: 10px;
+}
+.ilt-s1000d-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 25px;
+}
+.ilt-drag-image-choiceContainer {
+  padding: 0;
+}
+/*------------------------------------*/
+/*--- Styles for development ---*/
+/*------------------------------------*/
+#app > div.presentationWindow > div > div > div.presentationWindow__inner__content__center > div > div > div.component__container > div > div > p {
+  display: none;
+}
+#adapt > grammarly-desktop-integration {
+  display: none;
+}
+/*------------------------------------*/
+/*--- Main styles ---*/
+/*------------------------------------*/
 /*# sourceMappingURL=adapt.css.map */

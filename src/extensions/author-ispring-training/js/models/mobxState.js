@@ -5,14 +5,16 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
   var endBlock = new Backbone.Model({
     _id: "END_BLOCK",
   });
-  function isFastPreview () {
-    return window.name === "fast-preview" || opener && opener.name === "fast-preview";
-  };
+  function isFastPreview() {
+    return (
+      window.name === "fast-preview" ||
+      (opener && opener.name === "fast-preview")
+    );
+  }
 
   var currentBlockIndex = isFastPreview() ? 0 : -1;
 
   function MobxState() {
-    
     return mobx.observable({
       previousBlockIndex: null,
       currentBlockIndex: currentBlockIndex,
@@ -79,6 +81,9 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
       findInstructorComponents: function (components) {
         return components.filter(this.isComponentForInstructor.bind(this));
       },
+      findInstructorWordNotes: function (components) {
+        return components.filter(this.isComponentForInstructorWordNotes.bind(this));
+      },
       isComponentForPresenation: function (component) {
         return true;
       },
@@ -90,6 +95,15 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
 
         var isForInstructor = !!(output && output.iltSettings.iltInstructor);
         return isForInstructor;
+      },
+      isComponentForInstructorWordNotes: function (component) {
+        var output = component.get("output");
+        if (!output) return;
+
+        var wordSettings = output && output.wordSettings;
+        if (!wordSettings) return;
+
+        return wordSettings.studentNotes;
       },
     });
   }

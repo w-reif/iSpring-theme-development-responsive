@@ -30,7 +30,11 @@
 @import 'src\components\author-ilt-s1000d\css\styles.less';
 @import 'src\menu\adapt-contrib-boxMenu\less\boxMenu.less';
 @import 'src\menu\adapt-contrib-boxMenu\less\boxMenuItem.less';
-@import 'src\theme\author-ispring-default\less\plugins\author-ispring-training\instructorWindow.less';
-@import 'src\theme\author-ispring-default\less\plugins\author-ispring-training\ispringBlockEnd.less';
-@import 'src\theme\author-ispring-default\less\plugins\author-ispring-training\ispringBlockStart.less';
-@import 'src\theme\author-ispring-default\less\plugins\author-ispring-training\presentationWindow.less';
+@import 'src\theme\author-ispring-default-latest\less\plugins\author-ispring-training\instructorWindow.less';
+@import 'src\theme\author-ispring-default-latest\less\plugins\author-ispring-training\ispringBlockEnd.less';
+@import 'src\theme\author-ispring-default-latest\less\plugins\author-ispring-training\ispringBlockStart.less';
+@import 'src\theme\author-ispring-default-latest\less\plugins\author-ispring-training\presentationWindow.less';
+@import 'src\theme\author-ispring-default\less\instructorWindow.less';
+@import 'src\theme\author-ispring-default\less\ispringBlockEnd.less';
+@import 'src\theme\author-ispring-default\less\ispringBlockStart.less';
+@import 'src\theme\author-ispring-default\less\presentationWindow.less';

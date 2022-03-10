@@ -871,7 +871,22 @@ this["Handlebars"]["templates"]["ilt-s1000d"] = Handlebars.template({"1":functio
 },"useData":true});
 
 this["Handlebars"]["templates"]["instructorWindow"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<header>\n    <div class=\"headerWrap\">\n        <div class=\"headerLogo\"></div>\n        <h1>Instructor Control Window</h1>\n    </div>\n</header>\n<main>\n    <section class=\"controlPnl\">\n        <div id=\"launchCtrl\" class=\"box-c\">\n            <a id=\"launchPres\" class=\"custom-underline\" title=\"Launch Presentation\">Launch Presentation</a>\n        </div>\n        <div id=\"previousCtrl\" class=\"box-c split r\">\n            <a id=\"prevSlide\" class=\"custom-underline\" title=\"Previous\">Previous</a>\n        </div>\n        <div id=\"nextCtrl\" class=\"box-c split\">\n            <a id=\"nextSlide\" class=\"custom-underline\" title=\"Next\">Next</a>\n        </div>\n        <div id=\"restartCtrl\" class=\"box-c b\">\n            <a id=\"resetSlides\" class=\"custom-underline\" title=\"Restart Presentation\">Restart</a>\n        </div>\n        <div class=\"clearD\"></div>\n        <div class=\"noteWrap\">\n            <h1 id=\"slideTitle\"></h1>\n            <div id=\"notesDiv\" class=\"notesContent\"></div>\n            <div id=\"addlNotesDiv\" class=\"notesContent\"></div>\n        </div>\n    </section>\n    <section class=\"thumbStrip\">\n        <ul id=\"thumbList\"></ul>\n    </section>\n</main>\n<section class=\"footStick\">\n    <div class=\"stickCenter\">\n        <label>Import additional slide notes.</label><input type=\"file\" id=\"inputFile\" />\n    </div>\n</section>";
+    return "<header>\n    <div class=\"headerWrap\">\n        <div class=\"headerLogo\"></div>\n        <h1>Instructor Control Window</h1>\n    </div>\n</header>\n<main>\n    <section class=\"controlPnl\">\n        <div id=\"launchCtrl\" class=\"box-c\">\n            <a id=\"launchPres\" class=\"custom-underline\" title=\"Launch Presentation\">Launch Presentation</a>\n        </div>\n        <div id=\"previousCtrl\" class=\"box-c split r\">\n            <a id=\"prevSlide\" class=\"custom-underline\" title=\"Previous\">Previous</a>\n        </div>\n        <div id=\"nextCtrl\" class=\"box-c split\">\n            <a id=\"nextSlide\" class=\"custom-underline\" title=\"Next\">Next</a>\n        </div>\n        <div id=\"restartCtrl\" class=\"box-c b\">\n            <a id=\"resetSlides\" class=\"custom-underline\" title=\"Restart Presentation\">Restart</a>\n        </div>\n        <div class=\"clearD\"></div>\n        <div class=\"noteWrap\">\n            <h1 id=\"slideTitle\"></h1>\n            <div id=\"notesDiv\" class=\"notesContent\"></div>\n            <div id=\"addlNotesDiv\" class=\"notesContent\"></div>\n            <div id=\"wordNotesContainer\" class=\"notesContent\">\n                <label>Word Content</label>\n                <div id=\"wordNotesDiv\"></div>\n            </div>\n        </div>\n        </div>\n    </section>\n    <section class=\"thumbStrip\">\n        <ul id=\"thumbList\"></ul>\n    </section>\n</main>\n<section class=\"footStick\">\n    <div class=\"stickCenter\">\n        <label>Import additional slide notes.</label><input type=\"file\" id=\"inputFile\" />\n    </div>\n</section>";
+},"useData":true});
+
+this["Handlebars"]["templates"]["instructorWordContentItem"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div>"
+    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"title") || (depth0 != null ? lookupProperty(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":1,"column":5},"end":{"line":1,"column":14}}}) : helper)))
+    + "</div>\n<div>"
+    + ((stack1 = ((helper = (helper = lookupProperty(helpers,"markup") || (depth0 != null ? lookupProperty(depth0,"markup") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"markup","hash":{},"data":data,"loc":{"start":{"line":2,"column":5},"end":{"line":2,"column":17}}}) : helper))) != null ? stack1 : "")
+    + "</div>";
 },"useData":true});
 
 this["Handlebars"]["templates"]["presentationWindow"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
@@ -1101,6 +1116,51 @@ this["Handlebars"]["templates"]["ispringBlockEnd"] = Handlebars.template({"compi
 
 this["Handlebars"]["templates"]["ispringBlockStart"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div id=\"START_BLOCK\">\n    <div class=\"START_BLOCK__contents\">\n        <div class=\"START_BLOCK__contents__brand\">\n            <img src=\"assets/first-last-logo.png\" />\n        </div>\n        <div class=\"START_BLOCK__contents__customer\">\n            <div>NAWSARH</div>\n        </div>\n        <div class=\"START_BLOCK__contents__courseware\">\n            <div>07 Air Vehicle Jacking and Levelling Lesson</div>\n        </div>\n        <div class=\"START_BLOCK__contents__job-role\">\n            <div>B1.3</div>\n        </div>\n        <div class=\"START_BLOCK__contents__chapters\">\n            <div>(ATA Chapters: 07, 08)</div>\n        </div>\n        <div class=\"START_BLOCK__contents__copyright\">\n            <div>© Copyright 2018 Leonardo MW Ltd</div>\n        </div>\n        <div class=\"START_BLOCK__contents__disclaimer\">\n            <div>\n                This document contains information that is confidential and proprietary to Leonardo MW Ltd (‘the Company’) and is supplied on the express condition that it may not be disclosed to any third party, or reproduced in whole or in part, or used for manufacture, or used for any purpose other than for which it is supplied, without the prior written consent of the Company. Every permitted disclosure, reproduction, adaptation or publication of this document in whole or in part and in any manner or form shall prominently contain this notice.\n            </div>\n        </div>\n    </div>\n</div>";
+},"useData":true});
+
+this["Handlebars"]["templates"]["ispring-ilt-list"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "            <li>"
+    + ((stack1 = ((helper = (helper = lookupProperty(helpers,"textArea") || (depth0 != null ? lookupProperty(depth0,"textArea") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"textArea","hash":{},"data":data,"loc":{"start":{"line":6,"column":16},"end":{"line":6,"column":30}}}) : helper))) != null ? stack1 : "")
+    + "</li>\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div>\n    <div class=\"ilt-list-pre\">"
+    + ((stack1 = ((helper = (helper = lookupProperty(helpers,"preTextArea") || (depth0 != null ? lookupProperty(depth0,"preTextArea") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"preTextArea","hash":{},"data":data,"loc":{"start":{"line":2,"column":30},"end":{"line":2,"column":49}}}) : helper))) != null ? stack1 : "")
+    + "</div>\n    <div class=\"ilt-list-list\">\n        <ul>\n"
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"listItems") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":12},"end":{"line":7,"column":21}}})) != null ? stack1 : "")
+    + "        </ul>\n    </div>\n    <div class=\"ilt-list-post\">"
+    + ((stack1 = ((helper = (helper = lookupProperty(helpers,"postTextArea") || (depth0 != null ? lookupProperty(depth0,"postTextArea") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"postTextArea","hash":{},"data":data,"loc":{"start":{"line":10,"column":31},"end":{"line":10,"column":51}}}) : helper))) != null ? stack1 : "")
+    + "</div>\n</div>";
+},"useData":true});
+
+this["Handlebars"]["templates"]["ispring-ilt-text"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div>\n    "
+    + ((stack1 = ((helper = (helper = lookupProperty(helpers,"textAreaField") || (depth0 != null ? lookupProperty(depth0,"textAreaField") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"textAreaField","hash":{},"data":data,"loc":{"start":{"line":2,"column":4},"end":{"line":2,"column":25}}}) : helper))) != null ? stack1 : "")
+    + "\n</div>";
+},"useData":true});
+
+this["Handlebars"]["templates"]["ispring-unknown"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div>\n    This component does not have a template defined in theme\n</div>";
 },"useData":true});
 
 return this["Handlebars"];

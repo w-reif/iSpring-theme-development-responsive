@@ -90,7 +90,7 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
       var notes = localStorage.getItem(accessor);
       try {
         var parsed = JSON.parse(notes);
-        var currentSlideIndex = (this.state.currentBlockIndex) + 1;
+        var currentSlideIndex = this.state.currentBlockIndex + 1;
         var data = parsed[currentSlideIndex];
         var message = data && data.message;
         if (message) {
@@ -129,32 +129,73 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
       this.renderSlideNotes();
     },
 
+    handleContentBeforeRendering: function () {
+      $("#notesDiv").html(null);
+      $("#wordNotesContainer").css("display", "none");
+    },
+
     setupBlockForInstructor: function (block) {
       var blockId = block.get("_id");
-      $("#notesDiv").html(null);
-
+      this.handleContentBeforeRendering();
       if (["START_BLOCK", "END_BLOCK"].includes(blockId)) {
-        var title =
-          Adapt.course.get("displayTitle") || Adapt.course.get("title");
-        var prefix = blockId === "START_BLOCK" ? "First Slide" : "Last Slide";
-        $("#slideTitle").html("<div>" + prefix + " " + title + "</div>");
+        this.handleComputedSlides(blockId);
         return;
       }
+      var components = block.getChildren();
+      this.renderInstructorNotes(block, components);
+      this.renderWordStudentNotes(block, components);
+    },
 
-      if (blockId === "END_BLOCK") {
-        console.log("render endblock");
-        return;
-      }
+    isPreview: function () {
+      return ["preview", "fast-preview"].includes(window.name);
+    },
 
+    handleComputedSlides: function (blockId) {
+      var title = Adapt.course.get("displayTitle") || Adapt.course.get("title");
+      var prefix = blockId === "START_BLOCK" ? "First Slide" : "Last Slide";
+      $("#slideTitle").html("<div>" + prefix + " " + title + "</div>");
+    },
+
+    getComponentMarkup: function (component) {
+      var themeTemplateName = "ispring-" + component.get("_component");
+      var hbs =
+        Handlebars.templates[themeTemplateName] ||
+        Handlebars.templates["ispring-unknown"];
+      return hbs(component.toJSON());
+    },
+
+    renderInstructorNotes: function (block, components) {
       $("#slideTitle").html(block.get("title"));
-      var comps = this.state.findInstructorComponents(block.getChildren());
+      var comps = this.state.findInstructorComponents(components);
       $("#notesDiv").hide();
       $("#notesDiv").html(null);
-      comps.forEach(function (comp) {
-        $("#notesDiv").append(comp.get("textAreaField"));
-      });
-
+      comps.forEach(
+        function (comp) {
+          var markup = this.getComponentMarkup(comp);
+          $("#notesDiv").append(markup);
+        }.bind(this)
+      );
       $("#notesDiv").show();
+    },
+
+    renderWordStudentNotes: function (block, components) {
+      if (!this.isPreview()) return;
+      var comps = this.state.findInstructorWordNotes(components);
+      $("#wordNotesContainer").hide();
+      $("#wordNotesDiv").html(null);
+      comps.forEach(
+        function (comp) {
+          var markup = this.getComponentMarkup(comp);
+          $("#wordNotesDiv").append(
+            Handlebars.templates["instructorWordContentItem"]({
+              title: comp.get("title"),
+              markup: markup,
+            })
+          );
+        }.bind(this)
+      );
+      var display = comps.length === 0 ? "none" : "flex";
+      $("#wordNotesContainer").css("display", display);
     },
 
     isPresWinOpen: function () {
@@ -217,7 +258,7 @@ define(["core/js/adapt", "libraries/mobx"], function (Adapt, mobx) {
 
     handleFirstLaunch: function () {
       this.wasPresentationWindowLaunchedBefore = true;
-      var blockIndex = this.state.currentBlockIndex
+      var blockIndex = this.state.currentBlockIndex;
       var block = this.state.blockByIndex(blockIndex);
       this.setupBlockForInstructor(block);
       this.renderSlideNotes();
