@@ -1445,7 +1445,7 @@ html.adapt-scrolling #wrapper {
   text-decoration: none;
 }
 #prevBtnL::after {
-  content: "";
+  content: '';
   position: absolute;
 }
 #prevBtnL::after {
@@ -1470,7 +1470,7 @@ html.adapt-scrolling #wrapper {
   text-decoration: none;
 }
 #prevBtnR::after {
-  content: "";
+  content: '';
   position: absolute;
 }
 #prevBtnR::after {
@@ -1495,7 +1495,7 @@ html.adapt-scrolling #wrapper {
   text-decoration: none;
 }
 #fsBtn::after {
-  content: "";
+  content: '';
   position: absolute;
 }
 #fsBtn::after {
@@ -1545,7 +1545,7 @@ html.adapt-scrolling #wrapper {
 }
 #presentationWindow__startBlock .START_BLOCK__contents__brand img {
   height: 27.8125vw;
-  width: 19.396vw;
+  max-height: 500px;
 }
 #presentationWindow__startBlock .START_BLOCK__contents__customer,
 #presentationWindow__startBlock .START_BLOCK__contents__courseware,
@@ -1578,7 +1578,6 @@ html.adapt-scrolling #wrapper {
   box-sizing: border-box;
 }
 body {
-  padding: 25px;
   height: 100vh;
   overflow: hidden;
 }
@@ -1933,6 +1932,9 @@ footer {
     font-size: 11px;
   }
 }
+.presentationWindow {
+  padding: 25px;
+}
 .presentationWindow__inner {
   margin: 0 auto;
   max-height: 100%;
@@ -2103,6 +2105,12 @@ footer {
   }
   .ilt-drag-image-choiceContainer {
     max-height: 50vh;
+  }
+}
+@media only screen and (min-width: 1920px) and (max-height: 1080px) {
+  #prevCtrlL::after,
+  #prevCtrlR::after {
+    top: 2.5vw;
   }
 }
 @media all and (display-mode: fullscreen) {

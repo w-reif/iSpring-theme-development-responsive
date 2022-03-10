@@ -8,10 +8,13 @@
 
 body {
   // padding: 25px 25px 0;
-  padding: 25px;
   height: 100vh;
   overflow: hidden;
 }
+
+// #app {
+//   padding: 25px;
+// }
 
 html,
 body {
@@ -384,6 +387,7 @@ html {
 
 .presentationWindow {
   // overflow: hidden;
+  padding: 25px;
   &__inner {
     margin: 0 auto;
     // overflow: hidden;
@@ -631,8 +635,11 @@ html {
 }
 
 @media only screen and (min-width: 1920px) and (max-height: 1080px) {
-  * {
-    // background-color: red;
+  #prevCtrlL,
+  #prevCtrlR {
+    &::after {
+      top: 2.5vw;
+    }
   }
 }
 

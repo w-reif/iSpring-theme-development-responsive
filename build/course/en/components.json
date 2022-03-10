@@ -24,7 +24,7 @@
       "ilt": true,
       "word": false,
       "iltSettings": {
-        "iltInstructor": false,
+        "iltInstructor": true,
         "iltStudent": true
       }
     },
