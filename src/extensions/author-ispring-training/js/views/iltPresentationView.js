@@ -85,6 +85,9 @@ define(['core/js/adapt', 'libraries/mobx'], function (Adapt, mobx) {
       $('#prevCtrlL').on('click', function () {
         opener.postMessage({ label: 'WB_BACK' });
       });
+      $('#prevCtrlR').on('click', function () {
+        opener.postMessage({ label: 'WB_BACK' });
+      });
 
       this.listenTo(Adapt, {
         'device:changed': this.onDeviceResize,
@@ -228,13 +231,13 @@ define(['core/js/adapt', 'libraries/mobx'], function (Adapt, mobx) {
       $('#presentationWindow__startBlock').hide();
       $('.presentationWindow__inner__block-img').hide();
       $('.presentationWindow__inner__block-brand').hide();
-      $('.presentationWindow__inner__content__bottom__end').hide();
-      $('.presentationWindow__inner__content__bottom').hide();
+      // $('.presentationWindow__inner__content__bottom__end').hide();
+      // $('.presentationWindow__inner__content__bottom').hide();
       $('#presentationWindow__endBlock').show();
-      $('.presentationWindow__inner__content__bottom').css(
-        'display',
-        'none !important'
-      );
+      // $('.presentationWindow__inner__content__bottom').css(
+      //   'display',
+      //   'none !important'
+      // );
     },
 
     showContentSlide: function () {
